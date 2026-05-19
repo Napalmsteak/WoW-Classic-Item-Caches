@@ -8,11 +8,11 @@ This contains three types of files that together describe every tracked loot sou
 |---|---|
 | `itemDatabaseSources.js` | Master source list — CommonJS module, usable directly from Node.js / TypeScript |
 | `itemDatabaseSources.json` | Same data in plain JSON — usable from any language without a JavaScript runtime |
-| `Classic Era Cache.json` | Scraped item drops for Classic Era (1 566 items) |
-| `TBC Classic Cache.json` | Scraped item drops for TBC Classic (1 123 items) |
-| `Wrath Classic Cache.json` | Scraped item drops for Wrath Classic (2 056 items) |
-| `Cata Classic Cache.json` | Scraped item drops for Cataclysm Classic (1 149 items) |
-| `MoP Classic Cache.json` | Scraped item drops for MoP Classic (2 499 items) |
+| `Classic Era Cache.json` | Scraped item drops for Classic Era (1,566 items) |
+| `TBC Classic Cache.json` | Scraped item drops for TBC Classic (1,123 items) |
+| `Wrath Classic Cache.json` | Scraped item drops for Wrath Classic (2,056 items) |
+| `Cata Classic Cache.json` | Scraped item drops for Cataclysm Classic (1,149 items) |
+| `MoP Classic Cache.json` | Scraped item drops for MoP Classic (2,499 items) |
 
 ---
 
