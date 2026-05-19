@@ -1,6 +1,6 @@
 # WoW Classic Item Data Files
 
-This folder contains three types of files that together describe every tracked loot source across all five WoW Classic expansions, along with the item drops scraped from each one.
+This contains three types of files that together describe every tracked loot source across all five WoW Classic expansions, along with the item drops scraped from each one.
 
 | File | Purpose |
 |---|---|
