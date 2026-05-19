@@ -1,6 +1,8 @@
 # WoW Classic Item Data Files
 
-This contains three types of files that together describe every tracked loot source across all five WoW Classic expansions, along with the item drops scraped from each one.
+This contains three types of files that together describe every tracked loot source across all five WoW Classic expansions, along with the item drops scraped from each one. This is mostly used to provide both a local or offline source for applications or searches and is focused solely on end-game loot that would be used in Best in Slot(BiS) Lists or Wishlists.
+
+-= Crafted Items, Tier Tokens, Quest Rewards, and any source outside of a Dungeon or Raid is currently not provided, but planned to impliment soon =-
 
 | File | Purpose |
 |---|---|
