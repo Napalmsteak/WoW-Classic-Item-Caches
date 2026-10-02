@@ -2,14 +2,15 @@
 
 Offline item data for every **World of Warcraft Classic** game version: Classic Era, Season of
 Discovery, Forever, TBC Classic, Wrath Classic, Cataclysm Classic and Mists of Pandaria Classic.
-Each item comes with its Wowhead tooltip, icon name and the sources it comes from.
+Each item comes with its Wowhead tooltip, its icon (included as an image) and the sources it
+comes from.
 
 It covers the gear raid leaders and players plan around: **51,247 items** with every way to get
 them. That includes dungeon and raid bosses, world bosses, crafting, vendors (including tier-token
 and currency vendors), reputation, quests, PvP, tabards, and notable world and holiday drops.
 
 Use it to build BiS lists, wishlists, loot trackers, gear planners or item search, entirely
-offline, with no calls to Wowhead or Blizzard at runtime. These are the same files the
+offline: tooltips and icons included, with no calls to Wowhead or Blizzard at runtime. These are the same files the
 [WoW Classic Raid Tool](https://github.com/Napalmsteak/WoW-Classic-Raid-Tool-Releases) desktop
 app ships with.
 
@@ -24,6 +25,8 @@ app ships with.
 | `Wrath Classic Cache.json` | Wrath Classic items (9,723 · 22.2 MB) |
 | `Cata Classic Cache.json` | Cataclysm Classic items (8,234 · 17.3 MB) |
 | `MoP Classic Cache.json` | Mists of Pandaria Classic items (13,171 · 27.7 MB) |
+| `icons/` | Every item's icon, `<iconName>.jpg` (5,303 · 36 × 36 px · 23 MB) |
+| `sockets/` | Socket images for tooltips, `socket-<color>.gif` (red, yellow, blue, meta, prismatic, cogwheel, hydraulic) |
 
 The data is gear-focused. Most items are rare (blue) or epic (purple). Uncommon (green) items are
 included where they come from crafting, quests or reputation. Low-level leveling drops are left
@@ -147,7 +150,7 @@ Each file is a JSON array of item objects for one game version, built from Wowhe
   "sourceTypes": ["Raid"],                                  // Source types, same order as sourceKeys
   "sourcePhases": [6],                                      // Source phases, same order as sourceKeys
   "bossNames": ["Heigan the Unclean"],                      // Bosses that drop it (empty for non-boss sources)
-  "iconName": "inv_helmet_20",                              // Icon name (see Icon URLs)
+  "iconName": "inv_helmet_20",                              // Icon file: icons/<iconName>.jpg
   "tooltipHtml": "<table>…</table>",                        // Wowhead tooltip markup
   "lastUpdatedAt": "2026-10-01T12:44:15.151Z",              // When the item was last refreshed (ISO 8601)
 
@@ -185,19 +188,20 @@ An item with several source types counts once under each.
 | Cata Classic | 762 | 1,257 | 23 | 2,552 | 1,233 | 556 | 726 | 1,180 | 94 | 98 | — |
 | MoP Classic | 387 | 3,969 | 790 | 3,363 | 2,748 | 862 | 364 | 1,874 | 112 | 267 | — |
 
-### Icon URLs
+### Icons
 
-Combine `iconName` with Wowhead's image CDN:
+Every item's icon is in `icons/`, named by its `iconName`. Serve or load them locally:
 
 ```
-https://wow.zamimg.com/images/wow/icons/small/<iconName>.jpg   (18 × 18 px)
-https://wow.zamimg.com/images/wow/icons/medium/<iconName>.jpg  (36 × 36 px)
-https://wow.zamimg.com/images/wow/icons/large/<iconName>.jpg   (56 × 56 px)
+icons/<iconName>.jpg        36 × 36 px JPEG
 ```
 
-Example: `"iconName": "inv_helmet_20"` → `https://wow.zamimg.com/images/wow/icons/large/inv_helmet_20.jpg`
+Example: `"iconName": "inv_helmet_20"` → `icons/inv_helmet_20.jpg`
 
-For fully offline use, download the icons you need once and serve them locally.
+All 5,303 icons the items use are included. An `iconName` can be shared by many items, and
+3 Forever items have none (`iconName: null`). For other sizes, Wowhead's image CDN has the same
+names, though you'd be online again:
+`https://wow.zamimg.com/images/wow/icons/{small,medium,large}/<iconName>.jpg` (18, 36 or 56 px).
 
 ### Rendering tooltips
 
@@ -237,8 +241,18 @@ a container and add a few styles, and it looks like the screenshots above:
 ```
 
 Sockets are text links, such as `<a class="socket-red q0">Red Socket</a>` (with `socket-yellow`,
-`socket-blue`, `socket-meta` and so on). Style them as you like; the screenshots swap them for
-socket icons.
+`socket-blue`, `socket-meta` and so on). The matching images are in `sockets/`. To show them as in
+the screenshots, swap each socket link for `<img src="sockets/socket-red.gif">`, or style the
+link with the image as a background:
+
+```css
+.wow-tooltip a[class^="socket-"] { padding-left: 20px; background: no-repeat left center / 16px; }
+.wow-tooltip a.socket-red    { background-image: url(sockets/socket-red.gif); }
+.wow-tooltip a.socket-yellow { background-image: url(sockets/socket-yellow.gif); }
+.wow-tooltip a.socket-blue   { background-image: url(sockets/socket-blue.gif); }
+.wow-tooltip a.socket-meta   { background-image: url(sockets/socket-meta.gif); }
+/* … prismatic, cogwheel, hydraulic */
+```
 
 ---
 
@@ -304,9 +318,8 @@ for (const item of items) for (const boss of item.bossNames) (byBoss[boss] ??= [
 const quality = item => Number(item.tooltipHtml.match(/<b class="q(\d)">/)?.[1]);
 const epics = items.filter(i => quality(i) === 4);
 
-// Icon URL helper
-const iconUrl = (item, size = 'medium') =>
-  `https://wow.zamimg.com/images/wow/icons/${size}/${item.iconName}.jpg`;
+// Icon file (in this repo's icons/ folder)
+const iconPath = (item) => item.iconName && `icons/${item.iconName}.jpg`;
 ```
 
 ---
@@ -357,8 +370,7 @@ const getItemLevel = (item: WowItem): number | undefined => {
   return m ? parseInt(m[1], 10) : undefined;
 };
 
-const iconUrl = (item: WowItem, size: 'large' | 'medium' | 'small' = 'medium'): string =>
-  `https://wow.zamimg.com/images/wow/icons/${size}/${item.iconName}.jpg`;
+const iconPath = (item: WowItem): string | null => (item.iconName ? `icons/${item.iconName}.jpg` : null);
 ```
 
 > **Tip:** in Node.js / TypeScript you can import the module instead of the JSON:
@@ -401,8 +413,8 @@ def item_level(item: dict) -> int | None:
     m = re.search(r"Item Level.*?(\d+)", item["tooltipHtml"])
     return int(m.group(1)) if m else None
 
-def icon_url(item: dict, size: str = "medium") -> str:
-    return f"https://wow.zamimg.com/images/wow/icons/{size}/{item['iconName']}.jpg"
+def icon_path(item: dict) -> str | None:
+    return f"icons/{item['iconName']}.jpg" if item["iconName"] else None
 ```
 
 ---
@@ -526,8 +538,7 @@ foreach (var group in sources.Where(s => s.Expansion == "Wrath Classic" && s.Typ
                              .GroupBy(s => s.Phase).OrderBy(g => g.Key))
     Console.WriteLine($"Phase {group.Key}: {string.Join(", ", group.Select(s => s.Name))}");
 
-string IconUrl(WowItem item, string size = "medium") =>
-    $"https://wow.zamimg.com/images/wow/icons/{size}/{item.IconName}.jpg";
+string? IconPath(WowItem item) => item.IconName is null ? null : $"icons/{item.IconName}.jpg";
 ```
 
 ---
@@ -637,5 +648,5 @@ by_version_and_id = {(i["itemExpansion"], i["itemId"]): i for i in all_items}
   or Scholomance in Classic Era and MoP Classic. Filter by `expansion`, or use the full `key`.
 - `itemDatabaseSources.js` is a CommonJS module: use `require()` in Node.js. In TypeScript, enable
   `allowJs` and `esModuleInterop`, or import the `.json` instead.
-- Item and game data © Blizzard Entertainment; tooltips and icons via Wowhead. This is an
+- Item and game data, and the icons, © Blizzard Entertainment; tooltips and icons via Wowhead. This is an
   unofficial, fan-made dataset.
