@@ -1,86 +1,166 @@
 # WoW Classic Item Data Files
 
-This contains three types of files that together describe every tracked loot source across all five WoW Classic expansions, along with the item drops scraped from each one. This is mostly used to provide both a local or offline source for applications or searches and is focused solely on end-game loot that would be used in Best in Slot(BiS) Lists or Wishlists.
+Offline item data for every **World of Warcraft Classic** game version: Classic Era, Season of
+Discovery, Forever, TBC Classic, Wrath Classic, Cataclysm Classic and Mists of Pandaria Classic.
+Each item comes with its Wowhead tooltip, icon name and the sources it comes from.
 
--= Crafted Items, Tier Tokens, Quest Rewards, and any source outside of a Dungeon or Raid is currently not provided, but planned to impliment soon =-
+It covers the gear raid leaders and players plan around: **51,247 items** with every way to get
+them. That includes dungeon and raid bosses, world bosses, crafting, vendors (including tier-token
+and currency vendors), reputation, quests, PvP, tabards, and notable world and holiday drops.
+
+Use it to build BiS lists, wishlists, loot trackers, gear planners or item search, entirely
+offline, with no calls to Wowhead or Blizzard at runtime. These are the same files the
+[WoW Classic Raid Tool](https://github.com/Napalmsteak/WoW-Classic-Raid-Tool-Releases) desktop
+app ships with.
 
 | File | Purpose |
 |---|---|
-| `itemDatabaseSources.js` | Master source list — CommonJS module, usable directly from Node.js / TypeScript |
-| `itemDatabaseSources.json` | Same data in plain JSON — usable from any language without a JavaScript runtime |
-| `Classic Era Cache.json` | Scraped item drops for Classic Era (1,566 items) |
-| `TBC Classic Cache.json` | Scraped item drops for TBC Classic (1,123 items) |
-| `Wrath Classic Cache.json` | Scraped item drops for Wrath Classic (2,056 items) |
-| `Cata Classic Cache.json` | Scraped item drops for Cataclysm Classic (1,149 items) |
-| `MoP Classic Cache.json` | Scraped item drops for MoP Classic (2,499 items) |
+| `itemDatabaseSources.json` | Every source the items reference (508): dungeons, raids, world bosses, professions, vendors, reputations and more. Plain JSON, usable from any language |
+| `itemDatabaseSources.js` | The same list as a CommonJS module, for Node.js / TypeScript |
+| `Classic Era Cache.json` | Classic Era items (3,684 · 7.1 MB) |
+| `Season of Discovery Cache.json` | Season of Discovery items (5,985 · 14.5 MB) |
+| `Forever Cache.json` | Forever items (4,940 · 10.8 MB). **Beta snapshot**, see below |
+| `TBC Classic Cache.json` | TBC Classic items (5,510 · 11.8 MB) |
+| `Wrath Classic Cache.json` | Wrath Classic items (9,723 · 22.2 MB) |
+| `Cata Classic Cache.json` | Cataclysm Classic items (8,234 · 17.3 MB) |
+| `MoP Classic Cache.json` | Mists of Pandaria Classic items (13,171 · 27.7 MB) |
+
+The data is gear-focused. Most items are rare (blue) or epic (purple). Uncommon (green) items are
+included where they come from crafting, quests or reputation. Low-level leveling drops are left
+out.
 
 ---
 
-## `itemDatabaseSources.js` / `itemDatabaseSources.json`
+## Game versions
 
-These two files are different encodings of the same data: every dungeon, raid, and content phase tracked by the tool across all five expansions. Use `.js` if you are already in a Node.js / TypeScript environment; use `.json` for everything else.
+| Expansion name in the data | Game | Wowhead base URL |
+|---|---|---|
+| `Classic Era` | Classic Era (also Anniversary and Hardcore realms) | `https://www.wowhead.com/classic/` |
+| `Season of Discovery` | Season of Discovery | `https://www.wowhead.com/classic/` |
+| `Forever` | World of Warcraft: Forever (beta) | `https://www.wowhead.com/forever/` |
+| `TBC Classic` | The Burning Crusade Classic | `https://www.wowhead.com/tbc/` |
+| `Wrath Classic` | Wrath of the Lich King Classic | `https://www.wowhead.com/wotlk/` |
+| `Cata Classic` | Cataclysm Classic | `https://www.wowhead.com/cata/` |
+| `MoP Classic` | Mists of Pandaria Classic | `https://www.wowhead.com/mop-classic/` |
 
-### Source object structure
+**Season of Discovery** shares Classic Era's item ids, and Wowhead lists both under `/classic/`.
+An item from the base game appears in both files, while SoD's own items only appear in its file.
+
+**Forever** is a "Classic+" game. It reworks many Classic items under their *original* item ids,
+so the same id can have different stats in Forever than in Classic Era. Never look up a Forever
+item by id in another file, and vice versa. Forever is still in **beta**: its data is a snapshot
+that changes as the beta does. Its raids are listed as sources but have no items in this
+snapshot yet.
+
+---
+
+## `itemDatabaseSources.json` / `itemDatabaseSources.js`
+
+The same data in two encodings: one object per source an item can come from. Use the `.json`
+anywhere, or `require()` the `.js` in Node.js (`ITEM_DATABASE_SOURCES`).
+
+### Source object
 
 ```jsonc
 {
-  "key":       "classic era::raid::naxxramas",  // Stable lowercase composite ID
-  "expansion": "Classic Era",                   // Expansion name
-  "name":      "Naxxramas",                     // Human-readable instance name
-  "type":      "Raid",                          // "Raid" or "Dungeon"
-  "phase":     6                                // Content phase (1–6)
+  "key":       "classic era::raid::naxxramas",  // Stable lowercase composite id: "<expansion>::<type>::<name>"
+  "expansion": "Classic Era",                   // Game version (see the table above)
+  "name":      "Naxxramas",                     // Display name: an instance, profession, faction, vendor group…
+  "type":      "Raid",                          // Source type, see below
+  "phase":     6                                // Content phase the source arrived in (1 for always-available sources)
 }
 ```
 
-**`key`** is always `"<expansion>::<type>::<name>"` in lowercase. It matches the `sourceKeys` values inside the item cache files, making it the primary join field between the two datasets.
+`key` matches the entries of each item's `sourceKeys`. It's the join field between the two datasets.
 
-### Coverage summary
+### Source types
 
-| Expansion | Dungeons | Raids | Total sources |
-|---|---|---|---|
-| Classic Era | 20 | 7 | 27 |
-| TBC Classic | 16 | 9 | 25 |
-| Wrath Classic | 16 | 8 | 24 |
-| Cata Classic | 14 | 5 | 19 |
-| MoP Classic | 9 | 5 | 14 |
+| `type` | What it covers | Example `name`s |
+|---|---|---|
+| `Dungeon` | 5-player dungeon bosses | The Deadmines, Utgarde Pinnacle |
+| `Raid` | Raid bosses | Molten Core, Icecrown Citadel |
+| `WorldBoss` | Outdoor world bosses, holiday and seasonal bosses | World Bosses, Holiday bosses, Scourge Invasion |
+| `Crafted` | Made with a profession | Blacksmithing, Tailoring, Jewelcrafting |
+| `Vendor` | Bought from vendors, including tier tokens and currencies | Naxxramas tier (T7), Emblem of Frost, Champion's Seal, Timeless Isle |
+| `Reputation` | Faction reputation rewards | The Aldor, Argent Crusade, Golden Lotus |
+| `Quest` | Quest rewards | Quest rewards |
+| `PvP` | Honor, arena and battleground gear | Honor Points, Arena Points, Warsong Gulch Mark of Honor |
+| `Tabard` | Tabards | Tabards |
+| `Drop` | Notable world drops: rare elites, containers, world epics, scenarios | Rare elites, World drops, Scenario rewards |
+| `Other` | Forever only: achievements and sources not yet known | Achievement, Unknown source |
+
+### Sources per game version
+
+| Expansion | Dungeon | Raid | World Boss | Crafted | Vendor | Reputation | Quest | PvP | Tabard | Drop | Other | Total |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Classic Era | 20 | 7 | 2 | 5 | — | 4 | 1 | 1 | 1 | 1 | — | 42 |
+| Season of Discovery | 12 | 10 | 2 | 5 | 8 | 8 | 1 | 2 | 1 | 1 | — | 50 |
+| Forever | 28 | 3 | — | 1 | 1 | — | 1 | — | — | 1 | 2 | 37 |
+| TBC Classic | 16 | 9 | 2 | 7 | 1 | 20 | 1 | 3 | 1 | 2 | — | 62 |
+| Wrath Classic | 16 | 9 | 2 | 8 | 13 | 33 | 1 | 7 | 1 | 2 | — | 92 |
+| Cata Classic | 14 | 6 | 2 | 9 | 9 | 54 | 1 | 5 | 1 | 2 | — | 103 |
+| MoP Classic | 9 | 6 | 2 | 8 | 14 | 71 | 1 | 7 | 1 | 3 | — | 122 |
 
 ---
 
 ## Item cache files (`*Cache.json`)
 
-Each cache file is a JSON array of item objects for one expansion, scraped from Wowhead.
+Each file is a JSON array of item objects for one game version, built from Wowhead.
 
-### Item object structure
+### Item object
 
 ```jsonc
 {
-  "itemId": 23033,                         // Wowhead numeric item ID
-  "name": "Icy Scale Coif",               // Item display name
-  "itemUrl": "https://www.wowhead.com/classic/item=23033",  // Wowhead link
-  "itemExpansion": "Classic Era",          // Expansion name
-  "iconName": "inv_helmet_20",             // Wowhead icon slug (see Icon URLs below)
-  "sourceKeys": [                          // Keys matching itemDatabaseSources entries
-    "classic era::raid::naxxramas"
-  ],
-  "sourceLabels": ["Naxxramas"],           // Human-readable source name(s)
-  "sourceTypes": ["Raid"],                 // "Raid", "Dungeon", or "Crafted"
-  "sourcePhases": [6],                     // Content phase(s) the source is available in
-  "bossNames": ["Heigan the Unclean"],     // Boss(es) that drop this item (empty for crafted)
-  "discoveredCharacters": [],              // Reserved — always empty in these standalone files
-  "tooltipHtml": "<table>…</table>",       // Raw Wowhead tooltip HTML
-  "lastUpdatedAt": "2026-05-16T04:26:52.000Z"  // ISO 8601 timestamp of last scrape
+  "itemId": 23033,                                          // Wowhead / in-game item id
+  "name": "Icy Scale Coif",                                 // Item name
+  "itemUrl": "https://www.wowhead.com/classic/item=23033",  // Wowhead page for this game version
+  "itemExpansion": "Classic Era",                           // Game version
+  "sourceKeys": ["classic era::raid::naxxramas"],           // Keys of its sources in itemDatabaseSources
+  "sourceLabels": ["Naxxramas"],                            // Source names, same order as sourceKeys
+  "sourceTypes": ["Raid"],                                  // Source types, same order as sourceKeys
+  "sourcePhases": [6],                                      // Source phases, same order as sourceKeys
+  "bossNames": ["Heigan the Unclean"],                      // Bosses that drop it (empty for non-boss sources)
+  "iconName": "inv_helmet_20",                              // Icon name (see Icon URLs)
+  "tooltipHtml": "<table>…</table>",                        // Wowhead tooltip markup
+  "lastUpdatedAt": "2026-10-01T12:44:15.151Z",              // When the item was last refreshed (ISO 8601)
+
+  // Forever only:
+  "changeFromClassic": {                                    // How the item differs from its Classic Era version
+    "status": "updated",                                    // "new", "updated", "unchanged" (or "unconfirmed")
+    "lines": ["Spell Power 12 added", "Shadow Resistance 10 added"]
+  }
 }
 ```
 
-**Field notes:**
-- `sourceKeys` values are the same composite keys used in `itemDatabaseSources`, enabling a direct join between the two datasets.
-- `sourceTypes` may include `"Crafted"` for profession-crafted items that have no boss drop.
-- `tooltipHtml` contains the full Wowhead tooltip markup: item level, stats, set bonuses, drop chance. Parse it if you need stat data. The `<b class="qN">` tag carries the quality tier (q0 = poor → q5 = legendary).
-- `discoveredCharacters` is always empty in these files. It is populated only within the WoW Classic Raid Tool application when a character is found wearing the item.
+**Field notes**
+- An item can have several sources, for example a raid drop that a vendor also sells.
+  `sourceKeys`, `sourceLabels`, `sourceTypes` and `sourcePhases` are parallel arrays, one entry
+  per source.
+- `tooltipHtml` is the full tooltip: item level, binding, slot, armor, stats, sockets, set
+  bonuses, requirements and sell price. Parse it for stats. The item name sits in
+  `<b class="qN">`, where `N` is the quality: 0 poor, 1 common, 2 uncommon, 3 rare, 4 epic,
+  5 legendary, 7 heirloom.
+- `changeFromClassic` only exists in `Forever Cache.json`. It lists Wowhead's summary of what
+  Forever changed compared with Classic Era. `status: "new"` means an item that doesn't exist in
+  Classic.
+
+### Items per source type
+
+An item with several source types counts once under each.
+
+| Expansion | Dungeon | Raid | World Boss | Crafted | Vendor | Reputation | Quest | PvP | Tabard | Drop | Other |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Classic Era | 790 | 999 | 312 | 678 | — | 158 | 593 | 311 | 19 | 56 | — |
+| Season of Discovery | 1,039 | 1,256 | 68 | 892 | 1,381 | 361 | 245 | 956 | 21 | 2 | — |
+| Forever | 342 | — | — | 692 | 1,579 | — | 615 | — | — | 585 | 1,267 |
+| TBC Classic | 703 | 1,107 | 51 | 1,279 | 243 | 245 | 343 | 1,466 | 51 | 96 | — |
+| Wrath Classic | 646 | 3,568 | 33 | 2,025 | 1,949 | 378 | 379 | 2,088 | 80 | 53 | — |
+| Cata Classic | 762 | 1,257 | 23 | 2,552 | 1,233 | 556 | 726 | 1,180 | 94 | 98 | — |
+| MoP Classic | 387 | 3,969 | 790 | 3,363 | 2,748 | 862 | 364 | 1,874 | 112 | 267 | — |
 
 ### Icon URLs
 
-Combine `iconName` with the Wowhead CDN:
+Combine `iconName` with Wowhead's image CDN:
 
 ```
 https://wow.zamimg.com/images/wow/icons/small/<iconName>.jpg   (18 × 18 px)
@@ -88,43 +168,36 @@ https://wow.zamimg.com/images/wow/icons/medium/<iconName>.jpg  (36 × 36 px)
 https://wow.zamimg.com/images/wow/icons/large/<iconName>.jpg   (56 × 56 px)
 ```
 
-Example: `"iconName": "inv_helmet_20"` →
-`https://wow.zamimg.com/images/wow/icons/large/inv_helmet_20.jpg`
+Example: `"iconName": "inv_helmet_20"` → `https://wow.zamimg.com/images/wow/icons/large/inv_helmet_20.jpg`
 
-### Wowhead expansion subdomains
-
-| Expansion | Wowhead base URL |
-|---|---|
-| Classic Era | `https://www.wowhead.com/classic/` |
-| TBC Classic | `https://www.wowhead.com/tbc/` |
-| Wrath Classic | `https://www.wowhead.com/wotlk/` |
-| Cata Classic | `https://www.wowhead.com/cata/` |
-| MoP Classic | `https://www.wowhead.com/mop/` |
+For fully offline use, download the icons you need once and serve them locally.
 
 ---
 
 ## Joining sources to items
 
-The `key` field in `itemDatabaseSources` matches the entries in `sourceKeys` on each item. This lets you look up every item from a given instance, or annotate each item with its full source metadata (phase, type, etc.):
+`key` in `itemDatabaseSources` matches the entries of each item's `sourceKeys`. Use it to list
+everything from one source, or to attach full source details (type, phase) to items:
 
 ```js
-// JavaScript example — same pattern in every language below
 const sources = require('./itemDatabaseSources.json');
 const items   = require('./Wrath Classic Cache.json');
 
-// Build a map of key → source object for O(1) lookups
 const sourceMap = Object.fromEntries(sources.map(s => [s.key, s]));
 
-// Annotate every item with its primary source object
+// Every source of each item, with its details
 const annotated = items.map(item => ({
   ...item,
-  primarySource: sourceMap[item.sourceKeys[0]] ?? null,
+  sources: item.sourceKeys.map(k => sourceMap[k]).filter(Boolean),
 }));
 
-// All Phase 2 raid items
+// Phase 2 raid items (Ulduar)
 const phase2Raids = items.filter(item =>
-  item.sourceKeys.some(k => sourceMap[k]?.phase === 2 && sourceMap[k]?.type === 'Raid')
+  item.sourceKeys.some(k => sourceMap[k]?.type === 'Raid' && sourceMap[k]?.phase === 2)
 );
+
+// Everything Kirin Tor reputation rewards
+const kirinTor = items.filter(item => item.sourceKeys.includes('wrath classic::reputation::kirin tor'));
 ```
 
 ---
@@ -133,57 +206,35 @@ const phase2Raids = items.filter(item =>
 
 ### JavaScript / Node.js
 
-#### Working with the source list (`.js` module)
-
 ```js
+const fs = require('fs');
 const { ITEM_DATABASE_SOURCES } = require('./itemDatabaseSources.js');
 
-// All WotLK raid sources, sorted by phase
+// Wrath raids in phase order
 const wrathRaids = ITEM_DATABASE_SOURCES
   .filter(s => s.expansion === 'Wrath Classic' && s.type === 'Raid')
   .sort((a, b) => a.phase - b.phase);
-
 wrathRaids.forEach(s => console.log(`Phase ${s.phase}: ${s.name}`));
-// Phase 1: Naxxramas
-// Phase 1: The Obsidian Sanctum
-// ...
-// Phase 4: Icecrown Citadel
 
-// Unique phases for an expansion
-const phases = [...new Set(
-  ITEM_DATABASE_SOURCES
-    .filter(s => s.expansion === 'TBC Classic')
-    .map(s => s.phase)
-)].sort();
-console.log(phases); // [1, 2, 3, 4, 5]
-```
+const items = JSON.parse(fs.readFileSync('./Wrath Classic Cache.json', 'utf-8'));
 
-#### Working with the cache files
-
-```js
-const fs = require('fs');
-
-const sources = JSON.parse(fs.readFileSync('./itemDatabaseSources.json', 'utf-8'));
-const items   = JSON.parse(fs.readFileSync('./Wrath Classic Cache.json', 'utf-8'));
-
-const sourceMap = Object.fromEntries(sources.map(s => [s.key, s]));
-
-// All Ulduar drops
-const ulduarItems = items.filter(i =>
-  i.sourceKeys.includes('wrath classic::raid::ulduar')
-);
-
-// Find a specific item by ID
+// Find an item by id
 const shadowmourne = items.find(i => i.itemId === 49623);
 console.log(shadowmourne?.name); // "Shadowmourne"
 
-// Group all items by boss name
+// All crafted items, grouped by profession
+const byProfession = {};
+items.forEach(item => item.sourceTypes.forEach((type, i) => {
+  if (type === 'Crafted') (byProfession[item.sourceLabels[i]] ??= []).push(item.name);
+}));
+
+// Group boss drops by boss
 const byBoss = {};
-for (const item of items) {
-  for (const boss of item.bossNames) {
-    (byBoss[boss] ??= []).push(item.name);
-  }
-}
+for (const item of items) for (const boss of item.bossNames) (byBoss[boss] ??= []).push(item.name);
+
+// Quality from the tooltip (4 = epic)
+const quality = item => Number(item.tooltipHtml.match(/<b class="q(\d)">/)?.[1]);
+const epics = items.filter(i => quality(i) === 4);
 
 // Icon URL helper
 const iconUrl = (item, size = 'medium') =>
@@ -197,13 +248,15 @@ const iconUrl = (item, size = 'medium') =>
 ```ts
 import { readFileSync } from 'fs';
 
-// ── Types ──────────────────────────────────────────────────────────────────
+type SourceType =
+  | 'Dungeon' | 'Raid' | 'WorldBoss' | 'Crafted' | 'Vendor' | 'Reputation'
+  | 'Quest' | 'PvP' | 'Tabard' | 'Drop' | 'Other';
 
 interface Source {
   key: string;
   expansion: string;
   name: string;
-  type: 'Raid' | 'Dungeon';
+  type: SourceType;
   phase: number;
 }
 
@@ -212,109 +265,76 @@ interface WowItem {
   name: string;
   itemUrl: string;
   itemExpansion: string;
-  iconName: string;
   sourceKeys: string[];
   sourceLabels: string[];
-  sourceTypes: string[];
+  sourceTypes: SourceType[];
   sourcePhases: number[];
   bossNames: string[];
-  discoveredCharacters: string[];
+  iconName: string | null;
   tooltipHtml: string;
   lastUpdatedAt: string;
+  changeFromClassic?: { status: string; lines: string[] }; // Forever only
 }
 
-// ── Load ───────────────────────────────────────────────────────────────────
-
-const sources: Source[] = JSON.parse(
-  readFileSync('./itemDatabaseSources.json', 'utf-8')
-);
-const items: WowItem[] = JSON.parse(
-  readFileSync('./Wrath Classic Cache.json', 'utf-8')
-);
-
+const sources: Source[] = JSON.parse(readFileSync('./itemDatabaseSources.json', 'utf-8'));
+const items: WowItem[] = JSON.parse(readFileSync('./Wrath Classic Cache.json', 'utf-8'));
 const sourceMap = new Map(sources.map(s => [s.key, s]));
 
-// ── Queries ────────────────────────────────────────────────────────────────
+// Phase 4 items (Icecrown Citadel era), from any source
+const phase4 = items.filter(item => item.sourceKeys.some(k => sourceMap.get(k)?.phase === 4));
 
-// All Phase 4 items (Icecrown Citadel era)
-const phase4 = items.filter(item =>
-  item.sourceKeys.some(k => sourceMap.get(k)?.phase === 4)
-);
-
-// Icon URL helper
-const iconUrl = (item: WowItem, size: 'large' | 'medium' | 'small' = 'medium'): string =>
-  `https://wow.zamimg.com/images/wow/icons/${size}/${item.iconName}.jpg`;
-
-// Extract item level from tooltipHtml
-const itemLevelRegex = /Item Level.*?(\d+)/;
+// Item level from the tooltip
 const getItemLevel = (item: WowItem): number | undefined => {
-  const m = item.tooltipHtml.match(itemLevelRegex);
+  const m = item.tooltipHtml.match(/Item Level.*?(\d+)/);
   return m ? parseInt(m[1], 10) : undefined;
 };
+
+const iconUrl = (item: WowItem, size: 'large' | 'medium' | 'small' = 'medium'): string =>
+  `https://wow.zamimg.com/images/wow/icons/${size}/${item.iconName}.jpg`;
 ```
 
-> **Tip:** If you're in a Node.js / TypeScript project you can import `itemDatabaseSources.js` directly instead of the JSON file:
-> ```ts
-> import { ITEM_DATABASE_SOURCES } from './itemDatabaseSources.js';
-> ```
+> **Tip:** in Node.js / TypeScript you can import the module instead of the JSON:
+> `import { ITEM_DATABASE_SOURCES } from './itemDatabaseSources.js';`
 
 ---
 
 ### Python
 
 ```python
-import json
+import json, re
+from itertools import groupby
 
-# Load source definitions
 with open("itemDatabaseSources.json", encoding="utf-8") as f:
     sources: list[dict] = json.load(f)
-
-# Load item cache
 with open("Wrath Classic Cache.json", encoding="utf-8") as f:
     items: list[dict] = json.load(f)
 
-# Build a lookup dict: key → source object
-source_map: dict[str, dict] = {s["key"]: s for s in sources}
+source_map = {s["key"]: s for s in sources}
 
-# ── Source queries ─────────────────────────────────────────────────────────
-
-# All Classic Era raids grouped by phase
-from itertools import groupby
-era_raids = [s for s in sources if s["expansion"] == "Classic Era" and s["type"] == "Raid"]
-era_raids.sort(key=lambda s: s["phase"])
+# Classic Era raids by phase
+era_raids = sorted((s for s in sources if s["expansion"] == "Classic Era" and s["type"] == "Raid"),
+                   key=lambda s: s["phase"])
 for phase, group in groupby(era_raids, key=lambda s: s["phase"]):
     print(f"Phase {phase}: {', '.join(s['name'] for s in group)}")
 
-# ── Item queries ───────────────────────────────────────────────────────────
-
-# Build a lookup dict by itemId
-by_id: dict[int, dict] = {i["itemId"]: i for i in items}
-item = by_id.get(49623)
-print(item["name"] if item else "not found")  # "Shadowmourne"
+# Look up by id
+by_id = {i["itemId"]: i for i in items}
+print(by_id[49623]["name"])  # "Shadowmourne"
 
 # All Ulduar drops
 ulduar = [i for i in items if "wrath classic::raid::ulduar" in i["sourceKeys"]]
 
-# Annotate items with phase from source map
-for item in items:
-    primary_key = item["sourceKeys"][0] if item["sourceKeys"] else None
-    item["_phase"] = source_map[primary_key]["phase"] if primary_key in source_map else None
+# Every item a vendor sells, with the vendor group
+vendor_items = [(i["name"], label)
+                for i in items
+                for label, kind in zip(i["sourceLabels"], i["sourceTypes"]) if kind == "Vendor"]
 
-# Items sorted by phase, then name
-items_by_phase = sorted(
-    (i for i in items if i["_phase"] is not None),
-    key=lambda i: (i["_phase"], i["name"])
-)
-
-# Icon URL
-def icon_url(item: dict, size: str = "medium") -> str:
-    return f"https://wow.zamimg.com/images/wow/icons/{size}/{item['iconName']}.jpg"
-
-# Extract item level from tooltipHtml
-import re
-def get_item_level(item: dict) -> int | None:
+def item_level(item: dict) -> int | None:
     m = re.search(r"Item Level.*?(\d+)", item["tooltipHtml"])
     return int(m.group(1)) if m else None
+
+def icon_url(item: dict, size: str = "medium") -> str:
+    return f"https://wow.zamimg.com/images/wow/icons/{size}/{item['iconName']}.jpg"
 ```
 
 ---
@@ -322,10 +342,10 @@ def get_item_level(item: dict) -> int | None:
 ### Rust
 
 ```rust
-use serde::{Deserialize, Serialize};
+use serde::Deserialize;
 use std::{collections::HashMap, fs};
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize)]
 struct Source {
     key: String,
     expansion: String,
@@ -335,69 +355,51 @@ struct Source {
     phase: u8,
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize)]
+struct ChangeFromClassic {
+    status: String,
+    lines: Vec<String>,
+}
+
+#[derive(Debug, Deserialize)]
 #[serde(rename_all = "camelCase")]
 struct WowItem {
     item_id: u32,
     name: String,
     item_url: String,
     item_expansion: String,
-    icon_name: String,
     source_keys: Vec<String>,
     source_labels: Vec<String>,
     source_types: Vec<String>,
     source_phases: Vec<u8>,
     boss_names: Vec<String>,
-    discovered_characters: Vec<String>,
+    icon_name: Option<String>,
     tooltip_html: String,
     last_updated_at: String,
-}
-
-fn icon_url(item: &WowItem, size: &str) -> String {
-    format!(
-        "https://wow.zamimg.com/images/wow/icons/{}/{}.jpg",
-        size, item.icon_name
-    )
+    change_from_classic: Option<ChangeFromClassic>, // Forever only
 }
 
 fn main() {
-    let sources: Vec<Source> = serde_json::from_str(
-        &fs::read_to_string("itemDatabaseSources.json").unwrap()
-    ).unwrap();
+    let sources: Vec<Source> =
+        serde_json::from_str(&fs::read_to_string("itemDatabaseSources.json").unwrap()).unwrap();
+    let items: Vec<WowItem> =
+        serde_json::from_str(&fs::read_to_string("Wrath Classic Cache.json").unwrap()).unwrap();
 
-    let items: Vec<WowItem> = serde_json::from_str(
-        &fs::read_to_string("Wrath Classic Cache.json").unwrap()
-    ).unwrap();
+    let source_map: HashMap<&str, &Source> = sources.iter().map(|s| (s.key.as_str(), s)).collect();
 
-    // Build source map: key → Source
-    let source_map: HashMap<&str, &Source> =
-        sources.iter().map(|s| (s.key.as_str(), s)).collect();
+    let phase4 = items
+        .iter()
+        .filter(|i| i.source_keys.iter().any(|k| source_map.get(k.as_str()).map_or(false, |s| s.phase == 4)))
+        .count();
+    println!("Phase 4 items: {phase4}");
 
-    // All phase 4 items
-    let phase4: Vec<&WowItem> = items.iter()
-        .filter(|i| i.source_keys.iter()
-            .any(|k| source_map.get(k.as_str()).map_or(false, |s| s.phase == 4)))
-        .collect();
-
-    println!("Phase 4 items: {}", phase4.len());
-
-    // All WotLK raid sources
-    let wrath_raids: Vec<&Source> = sources.iter()
-        .filter(|s| s.expansion == "Wrath Classic" && s.source_type == "Raid")
-        .collect();
-
-    for src in &wrath_raids {
-        println!("Phase {}: {}", src.phase, src.name);
-    }
-
-    // Find item by ID
     if let Some(item) = items.iter().find(|i| i.item_id == 49623) {
-        println!("Found: {} — {}", item.name, icon_url(item, "large"));
+        println!("Found: {}", item.name);
     }
 }
 ```
 
-`Cargo.toml` dependencies:
+`Cargo.toml`:
 ```toml
 [dependencies]
 serde      = { version = "1", features = ["derive"] }
@@ -412,8 +414,6 @@ serde_json = "1"
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-// ── Types ──────────────────────────────────────────────────────────────────
-
 public record Source(
     [property: JsonPropertyName("key")]       string Key,
     [property: JsonPropertyName("expansion")] string Expansion,
@@ -422,59 +422,44 @@ public record Source(
     [property: JsonPropertyName("phase")]     int Phase
 );
 
-public record WowItem(
-    [property: JsonPropertyName("itemId")]               int ItemId,
-    [property: JsonPropertyName("name")]                 string Name,
-    [property: JsonPropertyName("itemUrl")]              string ItemUrl,
-    [property: JsonPropertyName("itemExpansion")]        string ItemExpansion,
-    [property: JsonPropertyName("iconName")]             string IconName,
-    [property: JsonPropertyName("sourceKeys")]           List<string> SourceKeys,
-    [property: JsonPropertyName("sourceLabels")]         List<string> SourceLabels,
-    [property: JsonPropertyName("sourceTypes")]          List<string> SourceTypes,
-    [property: JsonPropertyName("sourcePhases")]         List<int> SourcePhases,
-    [property: JsonPropertyName("bossNames")]            List<string> BossNames,
-    [property: JsonPropertyName("discoveredCharacters")] List<string> DiscoveredCharacters,
-    [property: JsonPropertyName("tooltipHtml")]          string TooltipHtml,
-    [property: JsonPropertyName("lastUpdatedAt")]        string LastUpdatedAt
+public record ChangeFromClassic(
+    [property: JsonPropertyName("status")] string Status,
+    [property: JsonPropertyName("lines")]  List<string> Lines
 );
 
-// ── Load ───────────────────────────────────────────────────────────────────
+public record WowItem(
+    [property: JsonPropertyName("itemId")]            int ItemId,
+    [property: JsonPropertyName("name")]              string Name,
+    [property: JsonPropertyName("itemUrl")]           string ItemUrl,
+    [property: JsonPropertyName("itemExpansion")]     string ItemExpansion,
+    [property: JsonPropertyName("sourceKeys")]        List<string> SourceKeys,
+    [property: JsonPropertyName("sourceLabels")]      List<string> SourceLabels,
+    [property: JsonPropertyName("sourceTypes")]       List<string> SourceTypes,
+    [property: JsonPropertyName("sourcePhases")]      List<int> SourcePhases,
+    [property: JsonPropertyName("bossNames")]         List<string> BossNames,
+    [property: JsonPropertyName("iconName")]          string? IconName,
+    [property: JsonPropertyName("tooltipHtml")]       string TooltipHtml,
+    [property: JsonPropertyName("lastUpdatedAt")]     string LastUpdatedAt,
+    [property: JsonPropertyName("changeFromClassic")] ChangeFromClassic? ChangeFromClassic // Forever only
+);
 
-var sources = JsonSerializer.Deserialize<List<Source>>(
-    File.ReadAllText("itemDatabaseSources.json"))!;
-
-var items = JsonSerializer.Deserialize<List<WowItem>>(
-    File.ReadAllText("Wrath Classic Cache.json"))!;
-
+var sources = JsonSerializer.Deserialize<List<Source>>(File.ReadAllText("itemDatabaseSources.json"))!;
 var sourceMap = sources.ToDictionary(s => s.Key);
 
-// ── Queries ────────────────────────────────────────────────────────────────
+// Every game version's items in one list
+string[] files = {
+    "Classic Era Cache.json", "Season of Discovery Cache.json", "Forever Cache.json",
+    "TBC Classic Cache.json", "Wrath Classic Cache.json", "Cata Classic Cache.json", "MoP Classic Cache.json"
+};
+var allItems = files.SelectMany(f => JsonSerializer.Deserialize<List<WowItem>>(File.ReadAllText(f))!).ToList();
 
-// All WotLK raid sources grouped by phase
-var byPhase = sources
-    .Where(s => s.Expansion == "Wrath Classic" && s.Type == "Raid")
-    .GroupBy(s => s.Phase)
-    .OrderBy(g => g.Key);
-
-foreach (var group in byPhase)
+// Wrath raids by phase
+foreach (var group in sources.Where(s => s.Expansion == "Wrath Classic" && s.Type == "Raid")
+                             .GroupBy(s => s.Phase).OrderBy(g => g.Key))
     Console.WriteLine($"Phase {group.Key}: {string.Join(", ", group.Select(s => s.Name))}");
 
-// All Phase 2 items (Ulduar)
-var phase2Items = items.Where(i =>
-    i.SourceKeys.Any(k => sourceMap.TryGetValue(k, out var s) && s.Phase == 2)
-).ToList();
-
-// Icon URL helper
 string IconUrl(WowItem item, string size = "medium") =>
     $"https://wow.zamimg.com/images/wow/icons/{size}/{item.IconName}.jpg";
-
-// Combine all expansions
-var allItems = new[] {
-    "Classic Era Cache.json", "TBC Classic Cache.json",
-    "Wrath Classic Cache.json", "Cata Classic Cache.json", "MoP Classic Cache.json"
-}.SelectMany(path =>
-    JsonSerializer.Deserialize<List<WowItem>>(File.ReadAllText(path))!
-).ToList();
 ```
 
 ---
@@ -485,98 +470,82 @@ var allItems = new[] {
 package main
 
 import (
-    "encoding/json"
-    "fmt"
-    "os"
-    "sort"
+	"encoding/json"
+	"fmt"
+	"os"
 )
 
 type Source struct {
-    Key       string `json:"key"`
-    Expansion string `json:"expansion"`
-    Name      string `json:"name"`
-    Type      string `json:"type"`
-    Phase     int    `json:"phase"`
+	Key       string `json:"key"`
+	Expansion string `json:"expansion"`
+	Name      string `json:"name"`
+	Type      string `json:"type"`
+	Phase     int    `json:"phase"`
+}
+
+type ChangeFromClassic struct {
+	Status string   `json:"status"`
+	Lines  []string `json:"lines"`
 }
 
 type WowItem struct {
-    ItemID               int      `json:"itemId"`
-    Name                 string   `json:"name"`
-    ItemURL              string   `json:"itemUrl"`
-    ItemExpansion        string   `json:"itemExpansion"`
-    IconName             string   `json:"iconName"`
-    SourceKeys           []string `json:"sourceKeys"`
-    SourceLabels         []string `json:"sourceLabels"`
-    SourceTypes          []string `json:"sourceTypes"`
-    SourcePhases         []int    `json:"sourcePhases"`
-    BossNames            []string `json:"bossNames"`
-    DiscoveredCharacters []string `json:"discoveredCharacters"`
-    TooltipHTML          string   `json:"tooltipHtml"`
-    LastUpdatedAt        string   `json:"lastUpdatedAt"`
+	ItemID            int                `json:"itemId"`
+	Name              string             `json:"name"`
+	ItemURL           string             `json:"itemUrl"`
+	ItemExpansion     string             `json:"itemExpansion"`
+	SourceKeys        []string           `json:"sourceKeys"`
+	SourceLabels      []string           `json:"sourceLabels"`
+	SourceTypes       []string           `json:"sourceTypes"`
+	SourcePhases      []int              `json:"sourcePhases"`
+	BossNames         []string           `json:"bossNames"`
+	IconName          *string            `json:"iconName"`
+	TooltipHTML       string             `json:"tooltipHtml"`
+	LastUpdatedAt     string             `json:"lastUpdatedAt"`
+	ChangeFromClassic *ChangeFromClassic `json:"changeFromClassic,omitempty"` // Forever only
 }
 
-func loadJSON[T any](path string) ([]T, error) {
-    data, err := os.ReadFile(path)
-    if err != nil { return nil, err }
-    var out []T
-    return out, json.Unmarshal(data, &out)
-}
-
-func iconURL(item WowItem, size string) string {
-    return fmt.Sprintf("https://wow.zamimg.com/images/wow/icons/%s/%s.jpg", size, item.IconName)
+func load[T any](path string) []T {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		panic(err)
+	}
+	var out []T
+	if err := json.Unmarshal(data, &out); err != nil {
+		panic(err)
+	}
+	return out
 }
 
 func main() {
-    sources, _ := loadJSON[Source]("itemDatabaseSources.json")
-    items, _   := loadJSON[WowItem]("Wrath Classic Cache.json")
+	sources := load[Source]("itemDatabaseSources.json")
+	items := load[WowItem]("Wrath Classic Cache.json")
 
-    // Build source map
-    sourceMap := make(map[string]Source, len(sources))
-    for _, s := range sources {
-        sourceMap[s.Key] = s
-    }
+	sourceMap := make(map[string]Source, len(sources))
+	for _, s := range sources {
+		sourceMap[s.Key] = s
+	}
 
-    // All WotLK raid sources sorted by phase
-    var raids []Source
-    for _, s := range sources {
-        if s.Expansion == "Wrath Classic" && s.Type == "Raid" {
-            raids = append(raids, s)
-        }
-    }
-    sort.Slice(raids, func(i, j int) bool { return raids[i].Phase < raids[j].Phase })
-    for _, s := range raids {
-        fmt.Printf("Phase %d: %s\n", s.Phase, s.Name)
-    }
-
-    // All Ulduar drops
-    for _, item := range items {
-        for _, k := range item.SourceKeys {
-            if k == "wrath classic::raid::ulduar" {
-                fmt.Println(item.Name, "—", iconURL(item, "medium"))
-                break
-            }
-        }
-    }
-
-    // Items with their phase annotated
-    for _, item := range items {
-        if len(item.SourceKeys) > 0 {
-            if src, ok := sourceMap[item.SourceKeys[0]]; ok {
-                _ = src.Phase // use as needed
-            }
-        }
-    }
+	// All Ulduar drops
+	for _, item := range items {
+		for _, k := range item.SourceKeys {
+			if k == "wrath classic::raid::ulduar" {
+				fmt.Println(item.Name)
+				break
+			}
+		}
+	}
 }
 ```
 
 ---
 
-## Combining all expansions
+## Combining game versions
 
-All cache files share the same schema and can be loaded together:
+All cache files share one schema and can be loaded together. Keep items apart by **`itemId` and
+`itemExpansion`**: the same id appears in several files (Classic Era and Season of Discovery share
+ids, and Forever reuses Classic ids for reworked items).
 
 ```python
-# Python — same pattern applies in every language
 import json, glob
 
 all_items = []
@@ -584,25 +553,21 @@ for path in sorted(glob.glob("*Cache.json")):
     with open(path, encoding="utf-8") as f:
         all_items.extend(json.load(f))
 
-print(f"Total items: {len(all_items)}")
+print(f"Total items: {len(all_items)}")  # 51,247
 
-# Deduplicate by (itemId, itemExpansion) — some names appear in multiple expansions
-seen = set()
-unique = []
-for item in all_items:
-    key = (item["itemId"], item["itemExpansion"])
-    if key not in seen:
-        seen.add(key)
-        unique.append(item)
-
-print(f"Unique items: {len(unique)}")
+by_version_and_id = {(i["itemExpansion"], i["itemId"]): i for i in all_items}
 ```
 
 ---
 
 ## Notes
 
-- Cache files are scraped periodically. `lastUpdatedAt` on each item reflects when its tooltip was last fetched from Wowhead.
-- `tooltipHtml` is raw Wowhead markup and is not a stable API — Wowhead may alter its format.
-- Some instance names appear in more than one expansion (e.g. Naxxramas in Classic Era and Wrath Classic, Scholomance in Classic Era and MoP Classic). Always filter by `expansion` or use the full `key` to distinguish them.
-- `itemDatabaseSources.js` is a CommonJS module (not ES module). In Node.js use `require()`, not `import`. In TypeScript, ensure `allowJs: true` and `esModuleInterop: true` are set in `tsconfig.json`, or import the `.json` file instead.
+- Built from Wowhead's item data. `lastUpdatedAt` says when each item was last refreshed. The
+  Forever file is refreshed regularly while its beta runs.
+- `tooltipHtml` is Wowhead's markup, not a stable API, and its format may change.
+- Some names exist in several game versions, such as Naxxramas in Classic Era and Wrath Classic,
+  or Scholomance in Classic Era and MoP Classic. Filter by `expansion`, or use the full `key`.
+- `itemDatabaseSources.js` is a CommonJS module: use `require()` in Node.js. In TypeScript, enable
+  `allowJs` and `esModuleInterop`, or import the `.json` instead.
+- Item and game data © Blizzard Entertainment; tooltips and icons via Wowhead. This is an
+  unofficial, fan-made dataset.

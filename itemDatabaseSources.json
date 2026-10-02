@@ -1,115 +1,3558 @@
 [
-  { "key": "classic era::dungeon::ragefire chasm",          "expansion": "Classic Era", "name": "Ragefire Chasm",              "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::the deadmines",           "expansion": "Classic Era", "name": "The Deadmines",               "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::wailing caverns",         "expansion": "Classic Era", "name": "Wailing Caverns",             "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::shadowfang keep",         "expansion": "Classic Era", "name": "Shadowfang Keep",             "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::blackfathom deeps",       "expansion": "Classic Era", "name": "Blackfathom Deeps",           "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::the stockade",            "expansion": "Classic Era", "name": "The Stockade",                "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::gnomeregan",              "expansion": "Classic Era", "name": "Gnomeregan",                  "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::razorfen kraul",          "expansion": "Classic Era", "name": "Razorfen Kraul",              "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::scarlet monastery",       "expansion": "Classic Era", "name": "Scarlet Monastery",           "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::razorfen downs",          "expansion": "Classic Era", "name": "Razorfen Downs",              "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::uldaman",                 "expansion": "Classic Era", "name": "Uldaman",                    "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::zul'farrak",              "expansion": "Classic Era", "name": "Zul'Farrak",                  "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::maraudon",                "expansion": "Classic Era", "name": "Maraudon",                   "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::the temple of atal'hakkar","expansion": "Classic Era","name": "The Temple of Atal'Hakkar",   "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::blackrock depths",        "expansion": "Classic Era", "name": "Blackrock Depths",            "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::lower blackrock spire",   "expansion": "Classic Era", "name": "Lower Blackrock Spire",       "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::upper blackrock spire",   "expansion": "Classic Era", "name": "Upper Blackrock Spire",       "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::scholomance",             "expansion": "Classic Era", "name": "Scholomance",                 "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::dungeon::stratholme",              "expansion": "Classic Era", "name": "Stratholme",                  "type": "Dungeon", "phase": 1 },
-  { "key": "classic era::raid::molten core",                "expansion": "Classic Era", "name": "Molten Core",                 "type": "Raid",    "phase": 1 },
-  { "key": "classic era::raid::onyxia's lair",              "expansion": "Classic Era", "name": "Onyxia's Lair",               "type": "Raid",    "phase": 1 },
-  { "key": "classic era::dungeon::dire maul",               "expansion": "Classic Era", "name": "Dire Maul",                   "type": "Dungeon", "phase": 2 },
-  { "key": "classic era::raid::blackwing lair",             "expansion": "Classic Era", "name": "Blackwing Lair",              "type": "Raid",    "phase": 3 },
-  { "key": "classic era::raid::zul'gurub",                  "expansion": "Classic Era", "name": "Zul'Gurub",                   "type": "Raid",    "phase": 4 },
-  { "key": "classic era::raid::ruins of ahn'qiraj",         "expansion": "Classic Era", "name": "Ruins of Ahn'Qiraj",          "type": "Raid",    "phase": 5 },
-  { "key": "classic era::raid::temple of ahn'qiraj",        "expansion": "Classic Era", "name": "Temple of Ahn'Qiraj",         "type": "Raid",    "phase": 5 },
-  { "key": "classic era::raid::naxxramas",                  "expansion": "Classic Era", "name": "Naxxramas",                   "type": "Raid",    "phase": 6 },
-
-  { "key": "tbc classic::dungeon::hellfire ramparts",       "expansion": "TBC Classic", "name": "Hellfire Ramparts",           "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::the blood furnace",       "expansion": "TBC Classic", "name": "The Blood Furnace",           "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::the shattered halls",     "expansion": "TBC Classic", "name": "The Shattered Halls",         "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::the slave pens",          "expansion": "TBC Classic", "name": "The Slave Pens",              "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::the underbog",            "expansion": "TBC Classic", "name": "The Underbog",                "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::the steamvault",          "expansion": "TBC Classic", "name": "The Steamvault",              "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::mana-tombs",              "expansion": "TBC Classic", "name": "Mana-Tombs",                  "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::auchenai crypts",         "expansion": "TBC Classic", "name": "Auchenai Crypts",             "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::sethekk halls",           "expansion": "TBC Classic", "name": "Sethekk Halls",               "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::shadow labyrinth",        "expansion": "TBC Classic", "name": "Shadow Labyrinth",            "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::old hillsbrad foothills", "expansion": "TBC Classic", "name": "Old Hillsbrad Foothills",     "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::the black morass",        "expansion": "TBC Classic", "name": "The Black Morass",            "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::the mechanar",            "expansion": "TBC Classic", "name": "The Mechanar",                "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::the botanica",            "expansion": "TBC Classic", "name": "The Botanica",                "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::dungeon::the arcatraz",            "expansion": "TBC Classic", "name": "The Arcatraz",                "type": "Dungeon", "phase": 1 },
-  { "key": "tbc classic::raid::karazhan",                   "expansion": "TBC Classic", "name": "Karazhan",                    "type": "Raid",    "phase": 1 },
-  { "key": "tbc classic::raid::gruul's lair",               "expansion": "TBC Classic", "name": "Gruul's Lair",                "type": "Raid",    "phase": 1 },
-  { "key": "tbc classic::raid::magtheridon's lair",         "expansion": "TBC Classic", "name": "Magtheridon's Lair",          "type": "Raid",    "phase": 1 },
-  { "key": "tbc classic::raid::serpentshrine cavern",       "expansion": "TBC Classic", "name": "Serpentshrine Cavern",        "type": "Raid",    "phase": 2 },
-  { "key": "tbc classic::raid::tempest keep",               "expansion": "TBC Classic", "name": "Tempest Keep",                "type": "Raid",    "phase": 2 },
-  { "key": "tbc classic::raid::hyjal summit",               "expansion": "TBC Classic", "name": "Hyjal Summit",                "type": "Raid",    "phase": 3 },
-  { "key": "tbc classic::raid::black temple",               "expansion": "TBC Classic", "name": "Black Temple",                "type": "Raid",    "phase": 3 },
-  { "key": "tbc classic::raid::zul'aman",                   "expansion": "TBC Classic", "name": "Zul'Aman",                    "type": "Raid",    "phase": 4 },
-  { "key": "tbc classic::dungeon::magisters' terrace",      "expansion": "TBC Classic", "name": "Magisters' Terrace",          "type": "Dungeon", "phase": 5 },
-  { "key": "tbc classic::raid::sunwell plateau",            "expansion": "TBC Classic", "name": "Sunwell Plateau",             "type": "Raid",    "phase": 5 },
-
-  { "key": "wrath classic::dungeon::utgarde keep",              "expansion": "Wrath Classic", "name": "Utgarde Keep",                    "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::dungeon::the nexus",                 "expansion": "Wrath Classic", "name": "The Nexus",                       "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::dungeon::azjol-nerub",               "expansion": "Wrath Classic", "name": "Azjol-Nerub",                     "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::dungeon::ahn'kahet: the old kingdom","expansion": "Wrath Classic", "name": "Ahn'kahet: The Old Kingdom",      "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::dungeon::drak'tharon keep",          "expansion": "Wrath Classic", "name": "Drak'Tharon Keep",                "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::dungeon::the violet hold",           "expansion": "Wrath Classic", "name": "The Violet Hold",                 "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::dungeon::gundrak",                   "expansion": "Wrath Classic", "name": "Gundrak",                         "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::dungeon::halls of stone",            "expansion": "Wrath Classic", "name": "Halls of Stone",                  "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::dungeon::halls of lightning",        "expansion": "Wrath Classic", "name": "Halls of Lightning",              "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::dungeon::the oculus",                "expansion": "Wrath Classic", "name": "The Oculus",                      "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::dungeon::utgarde pinnacle",          "expansion": "Wrath Classic", "name": "Utgarde Pinnacle",                "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::dungeon::the culling of stratholme", "expansion": "Wrath Classic", "name": "The Culling of Stratholme",       "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::dungeon::trial of the champion",     "expansion": "Wrath Classic", "name": "Trial of the Champion",           "type": "Dungeon", "phase": 1 },
-  { "key": "wrath classic::raid::naxxramas",                    "expansion": "Wrath Classic", "name": "Naxxramas",                       "type": "Raid",    "phase": 1 },
-  { "key": "wrath classic::raid::the obsidian sanctum",         "expansion": "Wrath Classic", "name": "The Obsidian Sanctum",            "type": "Raid",    "phase": 1 },
-  { "key": "wrath classic::raid::the eye of eternity",          "expansion": "Wrath Classic", "name": "The Eye of Eternity",             "type": "Raid",    "phase": 1 },
-  { "key": "wrath classic::raid::ulduar",                       "expansion": "Wrath Classic", "name": "Ulduar",                          "type": "Raid",    "phase": 2 },
-  { "key": "wrath classic::raid::trial of the crusader",        "expansion": "Wrath Classic", "name": "Trial of the Crusader",           "type": "Raid",    "phase": 3 },
-  { "key": "wrath classic::dungeon::the forge of souls",        "expansion": "Wrath Classic", "name": "The Forge of Souls",              "type": "Dungeon", "phase": 4 },
-  { "key": "wrath classic::dungeon::pit of saron",              "expansion": "Wrath Classic", "name": "Pit of Saron",                    "type": "Dungeon", "phase": 4 },
-  { "key": "wrath classic::dungeon::halls of reflection",       "expansion": "Wrath Classic", "name": "Halls of Reflection",             "type": "Dungeon", "phase": 4 },
-  { "key": "wrath classic::raid::onyxia's lair",                "expansion": "Wrath Classic", "name": "Onyxia's Lair",                   "type": "Raid",    "phase": 4 },
-  { "key": "wrath classic::raid::icecrown citadel",             "expansion": "Wrath Classic", "name": "Icecrown Citadel",                "type": "Raid",    "phase": 4 },
-  { "key": "wrath classic::raid::the ruby sanctum",             "expansion": "Wrath Classic", "name": "The Ruby Sanctum",                "type": "Raid",    "phase": 5 },
-
-  { "key": "cata classic::dungeon::blackrock caverns",          "expansion": "Cata Classic", "name": "Blackrock Caverns",               "type": "Dungeon", "phase": 1 },
-  { "key": "cata classic::dungeon::throne of the tides",        "expansion": "Cata Classic", "name": "Throne of the Tides",             "type": "Dungeon", "phase": 1 },
-  { "key": "cata classic::dungeon::the stonecore",              "expansion": "Cata Classic", "name": "The Stonecore",                   "type": "Dungeon", "phase": 1 },
-  { "key": "cata classic::dungeon::the vortex pinnacle",        "expansion": "Cata Classic", "name": "The Vortex Pinnacle",             "type": "Dungeon", "phase": 1 },
-  { "key": "cata classic::dungeon::lost city of the tol'vir",   "expansion": "Cata Classic", "name": "Lost City of the Tol'vir",        "type": "Dungeon", "phase": 1 },
-  { "key": "cata classic::dungeon::grim batol",                 "expansion": "Cata Classic", "name": "Grim Batol",                      "type": "Dungeon", "phase": 1 },
-  { "key": "cata classic::dungeon::halls of origination",       "expansion": "Cata Classic", "name": "Halls of Origination",            "type": "Dungeon", "phase": 1 },
-  { "key": "cata classic::dungeon::the deadmines",              "expansion": "Cata Classic", "name": "The Deadmines",                   "type": "Dungeon", "phase": 1 },
-  { "key": "cata classic::dungeon::shadowfang keep",            "expansion": "Cata Classic", "name": "Shadowfang Keep",                 "type": "Dungeon", "phase": 1 },
-  { "key": "cata classic::raid::blackwing descent",             "expansion": "Cata Classic", "name": "Blackwing Descent",               "type": "Raid",    "phase": 1 },
-  { "key": "cata classic::raid::the bastion of twilight",       "expansion": "Cata Classic", "name": "The Bastion of Twilight",         "type": "Raid",    "phase": 1 },
-  { "key": "cata classic::raid::throne of the four winds",      "expansion": "Cata Classic", "name": "Throne of the Four Winds",        "type": "Raid",    "phase": 1 },
-  { "key": "cata classic::dungeon::zul'aman",                   "expansion": "Cata Classic", "name": "Zul'Aman",                        "type": "Dungeon", "phase": 3 },
-  { "key": "cata classic::dungeon::zul'gurub",                  "expansion": "Cata Classic", "name": "Zul'Gurub",                       "type": "Dungeon", "phase": 3 },
-  { "key": "cata classic::raid::firelands",                     "expansion": "Cata Classic", "name": "Firelands",                       "type": "Raid",    "phase": 3 },
-  { "key": "cata classic::dungeon::end time",                   "expansion": "Cata Classic", "name": "End Time",                        "type": "Dungeon", "phase": 4 },
-  { "key": "cata classic::dungeon::well of eternity",           "expansion": "Cata Classic", "name": "Well of Eternity",                "type": "Dungeon", "phase": 4 },
-  { "key": "cata classic::dungeon::hour of twilight",           "expansion": "Cata Classic", "name": "Hour of Twilight",                "type": "Dungeon", "phase": 4 },
-  { "key": "cata classic::raid::dragon soul",                   "expansion": "Cata Classic", "name": "Dragon Soul",                     "type": "Raid",    "phase": 4 },
-
-  { "key": "mop classic::dungeon::temple of the jade serpent",  "expansion": "MoP Classic", "name": "Temple of the Jade Serpent",       "type": "Dungeon", "phase": 1 },
-  { "key": "mop classic::dungeon::stormstout brewery",          "expansion": "MoP Classic", "name": "Stormstout Brewery",               "type": "Dungeon", "phase": 1 },
-  { "key": "mop classic::dungeon::shado-pan monastery",         "expansion": "MoP Classic", "name": "Shado-Pan Monastery",              "type": "Dungeon", "phase": 1 },
-  { "key": "mop classic::dungeon::gate of the setting sun",     "expansion": "MoP Classic", "name": "Gate of the Setting Sun",          "type": "Dungeon", "phase": 1 },
-  { "key": "mop classic::dungeon::siege of niuzao temple",      "expansion": "MoP Classic", "name": "Siege of Niuzao Temple",           "type": "Dungeon", "phase": 1 },
-  { "key": "mop classic::dungeon::mogu'shan palace",            "expansion": "MoP Classic", "name": "Mogu'shan Palace",                 "type": "Dungeon", "phase": 1 },
-  { "key": "mop classic::dungeon::scarlet halls",               "expansion": "MoP Classic", "name": "Scarlet Halls",                    "type": "Dungeon", "phase": 1 },
-  { "key": "mop classic::dungeon::scarlet monastery",           "expansion": "MoP Classic", "name": "Scarlet Monastery",                "type": "Dungeon", "phase": 1 },
-  { "key": "mop classic::dungeon::scholomance",                 "expansion": "MoP Classic", "name": "Scholomance",                      "type": "Dungeon", "phase": 1 },
-  { "key": "mop classic::raid::mogu'shan vaults",               "expansion": "MoP Classic", "name": "Mogu'shan Vaults",                 "type": "Raid",    "phase": 1 },
-  { "key": "mop classic::raid::heart of fear",                  "expansion": "MoP Classic", "name": "Heart of Fear",                    "type": "Raid",    "phase": 1 },
-  { "key": "mop classic::raid::terrace of endless spring",      "expansion": "MoP Classic", "name": "Terrace of Endless Spring",        "type": "Raid",    "phase": 1 },
-  { "key": "mop classic::raid::throne of thunder",              "expansion": "MoP Classic", "name": "Throne of Thunder",                "type": "Raid",    "phase": 2 },
-  { "key": "mop classic::raid::siege of orgrimmar",             "expansion": "MoP Classic", "name": "Siege of Orgrimmar",               "type": "Raid",    "phase": 4 }
+  {
+    "key": "classic era::dungeon::ragefire chasm",
+    "expansion": "Classic Era",
+    "name": "Ragefire Chasm",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::the deadmines",
+    "expansion": "Classic Era",
+    "name": "The Deadmines",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::wailing caverns",
+    "expansion": "Classic Era",
+    "name": "Wailing Caverns",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::shadowfang keep",
+    "expansion": "Classic Era",
+    "name": "Shadowfang Keep",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::blackfathom deeps",
+    "expansion": "Classic Era",
+    "name": "Blackfathom Deeps",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::the stockade",
+    "expansion": "Classic Era",
+    "name": "The Stockade",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::gnomeregan",
+    "expansion": "Classic Era",
+    "name": "Gnomeregan",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::razorfen kraul",
+    "expansion": "Classic Era",
+    "name": "Razorfen Kraul",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::scarlet monastery",
+    "expansion": "Classic Era",
+    "name": "Scarlet Monastery",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::razorfen downs",
+    "expansion": "Classic Era",
+    "name": "Razorfen Downs",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::uldaman",
+    "expansion": "Classic Era",
+    "name": "Uldaman",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::zul'farrak",
+    "expansion": "Classic Era",
+    "name": "Zul'Farrak",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::maraudon",
+    "expansion": "Classic Era",
+    "name": "Maraudon",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::the temple of atal'hakkar",
+    "expansion": "Classic Era",
+    "name": "The Temple of Atal'Hakkar",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::blackrock depths",
+    "expansion": "Classic Era",
+    "name": "Blackrock Depths",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::lower blackrock spire",
+    "expansion": "Classic Era",
+    "name": "Lower Blackrock Spire",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::upper blackrock spire",
+    "expansion": "Classic Era",
+    "name": "Upper Blackrock Spire",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::scholomance",
+    "expansion": "Classic Era",
+    "name": "Scholomance",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::stratholme",
+    "expansion": "Classic Era",
+    "name": "Stratholme",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "classic era::raid::molten core",
+    "expansion": "Classic Era",
+    "name": "Molten Core",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "classic era::raid::onyxia's lair",
+    "expansion": "Classic Era",
+    "name": "Onyxia's Lair",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "classic era::dungeon::dire maul",
+    "expansion": "Classic Era",
+    "name": "Dire Maul",
+    "type": "Dungeon",
+    "phase": 2
+  },
+  {
+    "key": "classic era::raid::blackwing lair",
+    "expansion": "Classic Era",
+    "name": "Blackwing Lair",
+    "type": "Raid",
+    "phase": 3
+  },
+  {
+    "key": "classic era::raid::zul'gurub",
+    "expansion": "Classic Era",
+    "name": "Zul'Gurub",
+    "type": "Raid",
+    "phase": 4
+  },
+  {
+    "key": "classic era::raid::ruins of ahn'qiraj",
+    "expansion": "Classic Era",
+    "name": "Ruins of Ahn'Qiraj",
+    "type": "Raid",
+    "phase": 5
+  },
+  {
+    "key": "classic era::raid::temple of ahn'qiraj",
+    "expansion": "Classic Era",
+    "name": "Temple of Ahn'Qiraj",
+    "type": "Raid",
+    "phase": 5
+  },
+  {
+    "key": "classic era::raid::naxxramas",
+    "expansion": "Classic Era",
+    "name": "Naxxramas",
+    "type": "Raid",
+    "phase": 6
+  },
+  {
+    "key": "classic era::worldboss::world bosses",
+    "expansion": "Classic Era",
+    "name": "World Bosses",
+    "type": "WorldBoss",
+    "phase": 2
+  },
+  {
+    "key": "classic era::worldboss::scourge invasion",
+    "expansion": "Classic Era",
+    "name": "Scourge Invasion",
+    "type": "WorldBoss",
+    "phase": 6
+  },
+  {
+    "key": "classic era::crafted::blacksmithing",
+    "expansion": "Classic Era",
+    "name": "Blacksmithing",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "classic era::crafted::enchanting",
+    "expansion": "Classic Era",
+    "name": "Enchanting",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "classic era::crafted::engineering",
+    "expansion": "Classic Era",
+    "name": "Engineering",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "classic era::crafted::leatherworking",
+    "expansion": "Classic Era",
+    "name": "Leatherworking",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "classic era::crafted::tailoring",
+    "expansion": "Classic Era",
+    "name": "Tailoring",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "classic era::drop::world drops",
+    "expansion": "Classic Era",
+    "name": "World drops",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "classic era::pvp::honor rewards",
+    "expansion": "Classic Era",
+    "name": "Honor Rewards",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "classic era::quest::quest rewards",
+    "expansion": "Classic Era",
+    "name": "Quest Rewards",
+    "type": "Quest",
+    "phase": 1
+  },
+  {
+    "key": "classic era::reputation::brood of nozdormu",
+    "expansion": "Classic Era",
+    "name": "Brood of Nozdormu",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "classic era::reputation::the defilers",
+    "expansion": "Classic Era",
+    "name": "The Defilers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "classic era::reputation::the league of arathor",
+    "expansion": "Classic Era",
+    "name": "The League of Arathor",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "classic era::reputation::timbermaw hold",
+    "expansion": "Classic Era",
+    "name": "Timbermaw Hold",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "classic era::tabard::tabards",
+    "expansion": "Classic Era",
+    "name": "Tabards",
+    "type": "Tabard",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::dungeon::blackfathom deeps",
+    "expansion": "Season of Discovery",
+    "name": "Blackfathom Deeps",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::dungeon::gnomeregan",
+    "expansion": "Season of Discovery",
+    "name": "Gnomeregan",
+    "type": "Dungeon",
+    "phase": 2
+  },
+  {
+    "key": "season of discovery::dungeon::the temple of atal'hakkar",
+    "expansion": "Season of Discovery",
+    "name": "The Temple of Atal'Hakkar",
+    "type": "Dungeon",
+    "phase": 3
+  },
+  {
+    "key": "season of discovery::worldboss::world bosses",
+    "expansion": "Season of Discovery",
+    "name": "World Bosses",
+    "type": "WorldBoss",
+    "phase": 4
+  },
+  {
+    "key": "season of discovery::raid::molten core",
+    "expansion": "Season of Discovery",
+    "name": "Molten Core",
+    "type": "Raid",
+    "phase": 4
+  },
+  {
+    "key": "season of discovery::raid::onyxia's lair",
+    "expansion": "Season of Discovery",
+    "name": "Onyxia's Lair",
+    "type": "Raid",
+    "phase": 4
+  },
+  {
+    "key": "season of discovery::raid::blackwing lair",
+    "expansion": "Season of Discovery",
+    "name": "Blackwing Lair",
+    "type": "Raid",
+    "phase": 5
+  },
+  {
+    "key": "season of discovery::raid::zul'gurub",
+    "expansion": "Season of Discovery",
+    "name": "Zul'Gurub",
+    "type": "Raid",
+    "phase": 5
+  },
+  {
+    "key": "season of discovery::raid::ruins of ahn'qiraj",
+    "expansion": "Season of Discovery",
+    "name": "Ruins of Ahn'Qiraj",
+    "type": "Raid",
+    "phase": 5
+  },
+  {
+    "key": "season of discovery::raid::crystal vale",
+    "expansion": "Season of Discovery",
+    "name": "Crystal Vale",
+    "type": "Raid",
+    "phase": 5
+  },
+  {
+    "key": "season of discovery::raid::naxxramas",
+    "expansion": "Season of Discovery",
+    "name": "Naxxramas",
+    "type": "Raid",
+    "phase": 6
+  },
+  {
+    "key": "season of discovery::raid::temple of ahn'qiraj",
+    "expansion": "Season of Discovery",
+    "name": "Temple of Ahn'Qiraj",
+    "type": "Raid",
+    "phase": 6
+  },
+  {
+    "key": "season of discovery::raid::nightmare grove",
+    "expansion": "Season of Discovery",
+    "name": "Nightmare Grove",
+    "type": "Raid",
+    "phase": 6
+  },
+  {
+    "key": "season of discovery::raid::scarlet enclave",
+    "expansion": "Season of Discovery",
+    "name": "Scarlet Enclave",
+    "type": "Raid",
+    "phase": 8
+  },
+  {
+    "key": "season of discovery::dungeon::demon fall canyon",
+    "expansion": "Season of Discovery",
+    "name": "Demon Fall Canyon",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "season of discovery::dungeon::blackrock depths",
+    "expansion": "Season of Discovery",
+    "name": "Blackrock Depths",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "season of discovery::dungeon::lower blackrock spire",
+    "expansion": "Season of Discovery",
+    "name": "Lower Blackrock Spire",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "season of discovery::dungeon::upper blackrock spire",
+    "expansion": "Season of Discovery",
+    "name": "Upper Blackrock Spire",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "season of discovery::dungeon::dire maul",
+    "expansion": "Season of Discovery",
+    "name": "Dire Maul",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "season of discovery::dungeon::maraudon",
+    "expansion": "Season of Discovery",
+    "name": "Maraudon",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "season of discovery::dungeon::scholomance",
+    "expansion": "Season of Discovery",
+    "name": "Scholomance",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "season of discovery::dungeon::stratholme",
+    "expansion": "Season of Discovery",
+    "name": "Stratholme",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "season of discovery::dungeon::karazhan crypts",
+    "expansion": "Season of Discovery",
+    "name": "Karazhan Crypts",
+    "type": "Dungeon",
+    "phase": 7
+  },
+  {
+    "key": "season of discovery::worldboss::scourge invasion",
+    "expansion": "Season of Discovery",
+    "name": "Scourge Invasion",
+    "type": "WorldBoss",
+    "phase": 7
+  },
+  {
+    "key": "season of discovery::crafted::blacksmithing",
+    "expansion": "Season of Discovery",
+    "name": "Blacksmithing",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::crafted::enchanting",
+    "expansion": "Season of Discovery",
+    "name": "Enchanting",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::crafted::engineering",
+    "expansion": "Season of Discovery",
+    "name": "Engineering",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::crafted::leatherworking",
+    "expansion": "Season of Discovery",
+    "name": "Leatherworking",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::crafted::tailoring",
+    "expansion": "Season of Discovery",
+    "name": "Tailoring",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::drop::rare elites",
+    "expansion": "Season of Discovery",
+    "name": "Rare elites",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::pvp::blood moon",
+    "expansion": "Season of Discovery",
+    "name": "Blood Moon",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::pvp::honor rewards",
+    "expansion": "Season of Discovery",
+    "name": "Honor Rewards",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::quest::quest rewards",
+    "expansion": "Season of Discovery",
+    "name": "Quest Rewards",
+    "type": "Quest",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::reputation::argent dawn",
+    "expansion": "Season of Discovery",
+    "name": "Argent Dawn",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::reputation::brood of nozdormu",
+    "expansion": "Season of Discovery",
+    "name": "Brood of Nozdormu",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::reputation::emerald wardens",
+    "expansion": "Season of Discovery",
+    "name": "Emerald Wardens",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::reputation::hydraxian waterlords",
+    "expansion": "Season of Discovery",
+    "name": "Hydraxian Waterlords",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::reputation::silverwing sentinels",
+    "expansion": "Season of Discovery",
+    "name": "Silverwing Sentinels",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::reputation::the defilers",
+    "expansion": "Season of Discovery",
+    "name": "The Defilers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::reputation::the league of arathor",
+    "expansion": "Season of Discovery",
+    "name": "The League of Arathor",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::reputation::timbermaw hold",
+    "expansion": "Season of Discovery",
+    "name": "Timbermaw Hold",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::tabard::tabards",
+    "expansion": "Season of Discovery",
+    "name": "Tabards",
+    "type": "Tabard",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::vendor::blackwing lair tier",
+    "expansion": "Season of Discovery",
+    "name": "Blackwing Lair tier",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::vendor::dungeon sets",
+    "expansion": "Season of Discovery",
+    "name": "Dungeon sets",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::vendor::molten core tier",
+    "expansion": "Season of Discovery",
+    "name": "Molten Core tier",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::vendor::naxxramas tier",
+    "expansion": "Season of Discovery",
+    "name": "Naxxramas tier",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::vendor::ruins of ahn'qiraj rewards",
+    "expansion": "Season of Discovery",
+    "name": "Ruins of Ahn'Qiraj rewards",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::vendor::scarlet enclave tier",
+    "expansion": "Season of Discovery",
+    "name": "Scarlet Enclave tier",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::vendor::tarnished undermine real",
+    "expansion": "Season of Discovery",
+    "name": "Tarnished Undermine Real",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::vendor::temple of ahn'qiraj tier",
+    "expansion": "Season of Discovery",
+    "name": "Temple of Ahn'Qiraj tier",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::ragefire chasm",
+    "expansion": "Forever",
+    "name": "Ragefire Chasm",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::the deadmines",
+    "expansion": "Forever",
+    "name": "The Deadmines",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::wailing caverns",
+    "expansion": "Forever",
+    "name": "Wailing Caverns",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::shadowfang keep",
+    "expansion": "Forever",
+    "name": "Shadowfang Keep",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::blackfathom deeps",
+    "expansion": "Forever",
+    "name": "Blackfathom Deeps",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::the stockade",
+    "expansion": "Forever",
+    "name": "The Stockade",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::gnomeregan",
+    "expansion": "Forever",
+    "name": "Gnomeregan",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::razorfen kraul",
+    "expansion": "Forever",
+    "name": "Razorfen Kraul",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::scarlet monastery",
+    "expansion": "Forever",
+    "name": "Scarlet Monastery",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::razorfen downs",
+    "expansion": "Forever",
+    "name": "Razorfen Downs",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::uldaman",
+    "expansion": "Forever",
+    "name": "Uldaman",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::zul'farrak",
+    "expansion": "Forever",
+    "name": "Zul'Farrak",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::maraudon",
+    "expansion": "Forever",
+    "name": "Maraudon",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::the temple of atal'hakkar",
+    "expansion": "Forever",
+    "name": "The Temple of Atal'Hakkar",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::blackrock depths",
+    "expansion": "Forever",
+    "name": "Blackrock Depths",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::blackrock spire",
+    "expansion": "Forever",
+    "name": "Blackrock Spire",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::dire maul",
+    "expansion": "Forever",
+    "name": "Dire Maul",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::scholomance",
+    "expansion": "Forever",
+    "name": "Scholomance",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::stratholme",
+    "expansion": "Forever",
+    "name": "Stratholme",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::hall of thanes",
+    "expansion": "Forever",
+    "name": "Hall of Thanes",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::ruins of lordaeron",
+    "expansion": "Forever",
+    "name": "Ruins of Lordaeron",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::excavation site",
+    "expansion": "Forever",
+    "name": "Excavation Site",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::city of dalaran",
+    "expansion": "Forever",
+    "name": "City of Dalaran",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::the drowned city",
+    "expansion": "Forever",
+    "name": "The Drowned City",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::krol'dok stronghold",
+    "expansion": "Forever",
+    "name": "Krol'dok Stronghold",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::alcaz prison",
+    "expansion": "Forever",
+    "name": "Alcaz Prison",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::blackmaw hold",
+    "expansion": "Forever",
+    "name": "Blackmaw Hold",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::dungeon::shaper's terrace",
+    "expansion": "Forever",
+    "name": "Shaper's Terrace",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "forever::raid::barrow deeps",
+    "expansion": "Forever",
+    "name": "Barrow Deeps",
+    "type": "Raid",
+    "phase": 2
+  },
+  {
+    "key": "forever::raid::hyjal summit",
+    "expansion": "Forever",
+    "name": "Hyjal Summit",
+    "type": "Raid",
+    "phase": 2
+  },
+  {
+    "key": "forever::raid::onyxia's lair",
+    "expansion": "Forever",
+    "name": "Onyxia's Lair",
+    "type": "Raid",
+    "phase": 2
+  },
+  {
+    "key": "forever::crafted::crafted",
+    "expansion": "Forever",
+    "name": "Crafted",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "forever::drop::drops",
+    "expansion": "Forever",
+    "name": "Drops",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "forever::other::achievement",
+    "expansion": "Forever",
+    "name": "Achievement",
+    "type": "Other",
+    "phase": 1
+  },
+  {
+    "key": "forever::other::unknown source",
+    "expansion": "Forever",
+    "name": "Unknown source",
+    "type": "Other",
+    "phase": 1
+  },
+  {
+    "key": "forever::quest::quest rewards",
+    "expansion": "Forever",
+    "name": "Quest Rewards",
+    "type": "Quest",
+    "phase": 1
+  },
+  {
+    "key": "forever::vendor::vendors",
+    "expansion": "Forever",
+    "name": "Vendors",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::hellfire ramparts",
+    "expansion": "TBC Classic",
+    "name": "Hellfire Ramparts",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::the blood furnace",
+    "expansion": "TBC Classic",
+    "name": "The Blood Furnace",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::the shattered halls",
+    "expansion": "TBC Classic",
+    "name": "The Shattered Halls",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::the slave pens",
+    "expansion": "TBC Classic",
+    "name": "The Slave Pens",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::the underbog",
+    "expansion": "TBC Classic",
+    "name": "The Underbog",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::the steamvault",
+    "expansion": "TBC Classic",
+    "name": "The Steamvault",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::mana-tombs",
+    "expansion": "TBC Classic",
+    "name": "Mana-Tombs",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::auchenai crypts",
+    "expansion": "TBC Classic",
+    "name": "Auchenai Crypts",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::sethekk halls",
+    "expansion": "TBC Classic",
+    "name": "Sethekk Halls",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::shadow labyrinth",
+    "expansion": "TBC Classic",
+    "name": "Shadow Labyrinth",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::old hillsbrad foothills",
+    "expansion": "TBC Classic",
+    "name": "Old Hillsbrad Foothills",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::the black morass",
+    "expansion": "TBC Classic",
+    "name": "The Black Morass",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::the mechanar",
+    "expansion": "TBC Classic",
+    "name": "The Mechanar",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::the botanica",
+    "expansion": "TBC Classic",
+    "name": "The Botanica",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::dungeon::the arcatraz",
+    "expansion": "TBC Classic",
+    "name": "The Arcatraz",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::raid::karazhan",
+    "expansion": "TBC Classic",
+    "name": "Karazhan",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::raid::gruul's lair",
+    "expansion": "TBC Classic",
+    "name": "Gruul's Lair",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::raid::magtheridon's lair",
+    "expansion": "TBC Classic",
+    "name": "Magtheridon's Lair",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::raid::serpentshrine cavern",
+    "expansion": "TBC Classic",
+    "name": "Serpentshrine Cavern",
+    "type": "Raid",
+    "phase": 2
+  },
+  {
+    "key": "tbc classic::raid::tempest keep",
+    "expansion": "TBC Classic",
+    "name": "Tempest Keep",
+    "type": "Raid",
+    "phase": 2
+  },
+  {
+    "key": "tbc classic::raid::hyjal summit",
+    "expansion": "TBC Classic",
+    "name": "Hyjal Summit",
+    "type": "Raid",
+    "phase": 3
+  },
+  {
+    "key": "tbc classic::raid::black temple",
+    "expansion": "TBC Classic",
+    "name": "Black Temple",
+    "type": "Raid",
+    "phase": 3
+  },
+  {
+    "key": "tbc classic::raid::zul'aman",
+    "expansion": "TBC Classic",
+    "name": "Zul'Aman",
+    "type": "Raid",
+    "phase": 4
+  },
+  {
+    "key": "tbc classic::dungeon::magisters' terrace",
+    "expansion": "TBC Classic",
+    "name": "Magisters' Terrace",
+    "type": "Dungeon",
+    "phase": 5
+  },
+  {
+    "key": "tbc classic::raid::sunwell plateau",
+    "expansion": "TBC Classic",
+    "name": "Sunwell Plateau",
+    "type": "Raid",
+    "phase": 5
+  },
+  {
+    "key": "tbc classic::worldboss::world bosses",
+    "expansion": "TBC Classic",
+    "name": "World Bosses",
+    "type": "WorldBoss",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::worldboss::holiday bosses",
+    "expansion": "TBC Classic",
+    "name": "Holiday bosses",
+    "type": "WorldBoss",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::crafted::alchemy",
+    "expansion": "TBC Classic",
+    "name": "Alchemy",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::crafted::blacksmithing",
+    "expansion": "TBC Classic",
+    "name": "Blacksmithing",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::crafted::enchanting",
+    "expansion": "TBC Classic",
+    "name": "Enchanting",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::crafted::engineering",
+    "expansion": "TBC Classic",
+    "name": "Engineering",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::crafted::jewelcrafting",
+    "expansion": "TBC Classic",
+    "name": "Jewelcrafting",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::crafted::leatherworking",
+    "expansion": "TBC Classic",
+    "name": "Leatherworking",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::crafted::tailoring",
+    "expansion": "TBC Classic",
+    "name": "Tailoring",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::drop::rare elites",
+    "expansion": "TBC Classic",
+    "name": "Rare elites",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::drop::world drops",
+    "expansion": "TBC Classic",
+    "name": "World drops",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::pvp::arena points",
+    "expansion": "TBC Classic",
+    "name": "Arena Points",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::pvp::honor points",
+    "expansion": "TBC Classic",
+    "name": "Honor Points",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::pvp::other pvp",
+    "expansion": "TBC Classic",
+    "name": "Other PvP",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::quest::quest rewards",
+    "expansion": "TBC Classic",
+    "name": "Quest Rewards",
+    "type": "Quest",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::ashtongue deathsworn",
+    "expansion": "TBC Classic",
+    "name": "Ashtongue Deathsworn",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::brood of nozdormu",
+    "expansion": "TBC Classic",
+    "name": "Brood of Nozdormu",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::cenarion expedition",
+    "expansion": "TBC Classic",
+    "name": "Cenarion Expedition",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::honor hold",
+    "expansion": "TBC Classic",
+    "name": "Honor Hold",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::keepers of time",
+    "expansion": "TBC Classic",
+    "name": "Keepers of Time",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::kurenai",
+    "expansion": "TBC Classic",
+    "name": "Kurenai",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::lower city",
+    "expansion": "TBC Classic",
+    "name": "Lower City",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::netherwing",
+    "expansion": "TBC Classic",
+    "name": "Netherwing",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::ogri'la",
+    "expansion": "TBC Classic",
+    "name": "Ogri'la",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::sha'tari skyguard",
+    "expansion": "TBC Classic",
+    "name": "Sha'tari Skyguard",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::shattered sun offensive",
+    "expansion": "TBC Classic",
+    "name": "Shattered Sun Offensive",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::sporeggar",
+    "expansion": "TBC Classic",
+    "name": "Sporeggar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::the aldor",
+    "expansion": "TBC Classic",
+    "name": "The Aldor",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::the consortium",
+    "expansion": "TBC Classic",
+    "name": "The Consortium",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::the mag'har",
+    "expansion": "TBC Classic",
+    "name": "The Mag'har",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::the scryers",
+    "expansion": "TBC Classic",
+    "name": "The Scryers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::the sha'tar",
+    "expansion": "TBC Classic",
+    "name": "The Sha'tar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::thrallmar",
+    "expansion": "TBC Classic",
+    "name": "Thrallmar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::timbermaw hold",
+    "expansion": "TBC Classic",
+    "name": "Timbermaw Hold",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::reputation::tranquillien",
+    "expansion": "TBC Classic",
+    "name": "Tranquillien",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::tabard::tabards",
+    "expansion": "TBC Classic",
+    "name": "Tabards",
+    "type": "Tabard",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::vendor::badge of justice",
+    "expansion": "TBC Classic",
+    "name": "Badge of Justice",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::utgarde keep",
+    "expansion": "Wrath Classic",
+    "name": "Utgarde Keep",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::the nexus",
+    "expansion": "Wrath Classic",
+    "name": "The Nexus",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::azjol-nerub",
+    "expansion": "Wrath Classic",
+    "name": "Azjol-Nerub",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::ahn'kahet: the old kingdom",
+    "expansion": "Wrath Classic",
+    "name": "Ahn'kahet: The Old Kingdom",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::drak'tharon keep",
+    "expansion": "Wrath Classic",
+    "name": "Drak'Tharon Keep",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::the violet hold",
+    "expansion": "Wrath Classic",
+    "name": "The Violet Hold",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::gundrak",
+    "expansion": "Wrath Classic",
+    "name": "Gundrak",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::halls of stone",
+    "expansion": "Wrath Classic",
+    "name": "Halls of Stone",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::halls of lightning",
+    "expansion": "Wrath Classic",
+    "name": "Halls of Lightning",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::the oculus",
+    "expansion": "Wrath Classic",
+    "name": "The Oculus",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::utgarde pinnacle",
+    "expansion": "Wrath Classic",
+    "name": "Utgarde Pinnacle",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::the culling of stratholme",
+    "expansion": "Wrath Classic",
+    "name": "The Culling of Stratholme",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::dungeon::trial of the champion",
+    "expansion": "Wrath Classic",
+    "name": "Trial of the Champion",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::raid::naxxramas",
+    "expansion": "Wrath Classic",
+    "name": "Naxxramas",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::raid::the obsidian sanctum",
+    "expansion": "Wrath Classic",
+    "name": "The Obsidian Sanctum",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::raid::the eye of eternity",
+    "expansion": "Wrath Classic",
+    "name": "The Eye of Eternity",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::raid::vault of archavon",
+    "expansion": "Wrath Classic",
+    "name": "Vault of Archavon",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::raid::ulduar",
+    "expansion": "Wrath Classic",
+    "name": "Ulduar",
+    "type": "Raid",
+    "phase": 2
+  },
+  {
+    "key": "wrath classic::raid::trial of the crusader",
+    "expansion": "Wrath Classic",
+    "name": "Trial of the Crusader",
+    "type": "Raid",
+    "phase": 3
+  },
+  {
+    "key": "wrath classic::dungeon::the forge of souls",
+    "expansion": "Wrath Classic",
+    "name": "The Forge of Souls",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "wrath classic::dungeon::pit of saron",
+    "expansion": "Wrath Classic",
+    "name": "Pit of Saron",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "wrath classic::dungeon::halls of reflection",
+    "expansion": "Wrath Classic",
+    "name": "Halls of Reflection",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "wrath classic::raid::onyxia's lair",
+    "expansion": "Wrath Classic",
+    "name": "Onyxia's Lair",
+    "type": "Raid",
+    "phase": 4
+  },
+  {
+    "key": "wrath classic::raid::icecrown citadel",
+    "expansion": "Wrath Classic",
+    "name": "Icecrown Citadel",
+    "type": "Raid",
+    "phase": 4
+  },
+  {
+    "key": "wrath classic::raid::the ruby sanctum",
+    "expansion": "Wrath Classic",
+    "name": "The Ruby Sanctum",
+    "type": "Raid",
+    "phase": 5
+  },
+  {
+    "key": "wrath classic::worldboss::holiday bosses",
+    "expansion": "Wrath Classic",
+    "name": "Holiday bosses",
+    "type": "WorldBoss",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::worldboss::scourge invasion",
+    "expansion": "Wrath Classic",
+    "name": "Scourge Invasion",
+    "type": "WorldBoss",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::crafted::alchemy",
+    "expansion": "Wrath Classic",
+    "name": "Alchemy",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::crafted::blacksmithing",
+    "expansion": "Wrath Classic",
+    "name": "Blacksmithing",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::crafted::enchanting",
+    "expansion": "Wrath Classic",
+    "name": "Enchanting",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::crafted::engineering",
+    "expansion": "Wrath Classic",
+    "name": "Engineering",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::crafted::inscription",
+    "expansion": "Wrath Classic",
+    "name": "Inscription",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::crafted::jewelcrafting",
+    "expansion": "Wrath Classic",
+    "name": "Jewelcrafting",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::crafted::leatherworking",
+    "expansion": "Wrath Classic",
+    "name": "Leatherworking",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::crafted::tailoring",
+    "expansion": "Wrath Classic",
+    "name": "Tailoring",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::drop::rare elites",
+    "expansion": "Wrath Classic",
+    "name": "Rare elites",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::drop::world drops",
+    "expansion": "Wrath Classic",
+    "name": "World drops",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::pvp::arena points",
+    "expansion": "Wrath Classic",
+    "name": "Arena Points",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::pvp::honor points",
+    "expansion": "Wrath Classic",
+    "name": "Honor Points",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::pvp::other pvp",
+    "expansion": "Wrath Classic",
+    "name": "Other PvP",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::pvp::stone keeper's shard",
+    "expansion": "Wrath Classic",
+    "name": "Stone Keeper's Shard",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::pvp::venture coin",
+    "expansion": "Wrath Classic",
+    "name": "Venture Coin",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::pvp::warsong gulch mark of honor",
+    "expansion": "Wrath Classic",
+    "name": "Warsong Gulch Mark of Honor",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::pvp::wintergrasp mark of honor",
+    "expansion": "Wrath Classic",
+    "name": "Wintergrasp Mark of Honor",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::quest::quest rewards",
+    "expansion": "Wrath Classic",
+    "name": "Quest Rewards",
+    "type": "Quest",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::alliance vanguard",
+    "expansion": "Wrath Classic",
+    "name": "Alliance Vanguard",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::argent crusade",
+    "expansion": "Wrath Classic",
+    "name": "Argent Crusade",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::ashtongue deathsworn",
+    "expansion": "Wrath Classic",
+    "name": "Ashtongue Deathsworn",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::brood of nozdormu",
+    "expansion": "Wrath Classic",
+    "name": "Brood of Nozdormu",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::cenarion expedition",
+    "expansion": "Wrath Classic",
+    "name": "Cenarion Expedition",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::frenzyheart tribe",
+    "expansion": "Wrath Classic",
+    "name": "Frenzyheart Tribe",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::honor hold",
+    "expansion": "Wrath Classic",
+    "name": "Honor Hold",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::horde expedition",
+    "expansion": "Wrath Classic",
+    "name": "Horde Expedition",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::keepers of time",
+    "expansion": "Wrath Classic",
+    "name": "Keepers of Time",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::kirin tor",
+    "expansion": "Wrath Classic",
+    "name": "Kirin Tor",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::knights of the ebon blade",
+    "expansion": "Wrath Classic",
+    "name": "Knights of the Ebon Blade",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::kurenai",
+    "expansion": "Wrath Classic",
+    "name": "Kurenai",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::lower city",
+    "expansion": "Wrath Classic",
+    "name": "Lower City",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::netherwing",
+    "expansion": "Wrath Classic",
+    "name": "Netherwing",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::ogri'la",
+    "expansion": "Wrath Classic",
+    "name": "Ogri'la",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::sha'tari skyguard",
+    "expansion": "Wrath Classic",
+    "name": "Sha'tari Skyguard",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::shattered sun offensive",
+    "expansion": "Wrath Classic",
+    "name": "Shattered Sun Offensive",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::sporeggar",
+    "expansion": "Wrath Classic",
+    "name": "Sporeggar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::the aldor",
+    "expansion": "Wrath Classic",
+    "name": "The Aldor",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::the ashen verdict",
+    "expansion": "Wrath Classic",
+    "name": "The Ashen Verdict",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::the consortium",
+    "expansion": "Wrath Classic",
+    "name": "The Consortium",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::the kalu'ak",
+    "expansion": "Wrath Classic",
+    "name": "The Kalu'ak",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::the mag'har",
+    "expansion": "Wrath Classic",
+    "name": "The Mag'har",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::the oracles",
+    "expansion": "Wrath Classic",
+    "name": "The Oracles",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::the scryers",
+    "expansion": "Wrath Classic",
+    "name": "The Scryers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::the sha'tar",
+    "expansion": "Wrath Classic",
+    "name": "The Sha'tar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::the silver covenant",
+    "expansion": "Wrath Classic",
+    "name": "The Silver Covenant",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::the sons of hodir",
+    "expansion": "Wrath Classic",
+    "name": "The Sons of Hodir",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::the sunreavers",
+    "expansion": "Wrath Classic",
+    "name": "The Sunreavers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::the wyrmrest accord",
+    "expansion": "Wrath Classic",
+    "name": "The Wyrmrest Accord",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::thrallmar",
+    "expansion": "Wrath Classic",
+    "name": "Thrallmar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::timbermaw hold",
+    "expansion": "Wrath Classic",
+    "name": "Timbermaw Hold",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::reputation::tranquillien",
+    "expansion": "Wrath Classic",
+    "name": "Tranquillien",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::tabard::tabards",
+    "expansion": "Wrath Classic",
+    "name": "Tabards",
+    "type": "Tabard",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::champion's seal",
+    "expansion": "Wrath Classic",
+    "name": "Champion's Seal",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::defiler's scourgestone",
+    "expansion": "Wrath Classic",
+    "name": "Defiler's Scourgestone",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::emblem of conquest",
+    "expansion": "Wrath Classic",
+    "name": "Emblem of Conquest",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::emblem of frost",
+    "expansion": "Wrath Classic",
+    "name": "Emblem of Frost",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::emblem of heroism",
+    "expansion": "Wrath Classic",
+    "name": "Emblem of Heroism",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::emblem of triumph",
+    "expansion": "Wrath Classic",
+    "name": "Emblem of Triumph",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::emblem of valor",
+    "expansion": "Wrath Classic",
+    "name": "Emblem of Valor",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::kirin tor rings",
+    "expansion": "Wrath Classic",
+    "name": "Kirin Tor rings",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::naxxramas tier (t7)",
+    "expansion": "Wrath Classic",
+    "name": "Naxxramas tier (T7)",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::necrotic runes",
+    "expansion": "Wrath Classic",
+    "name": "Necrotic Runes",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::sidereal essence",
+    "expansion": "Wrath Classic",
+    "name": "Sidereal Essence",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::trial of the grand crusader tier (t9)",
+    "expansion": "Wrath Classic",
+    "name": "Trial of the Grand Crusader tier (T9)",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::vendor::ulduar tier (t8)",
+    "expansion": "Wrath Classic",
+    "name": "Ulduar tier (T8)",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::dungeon::blackrock caverns",
+    "expansion": "Cata Classic",
+    "name": "Blackrock Caverns",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::dungeon::throne of the tides",
+    "expansion": "Cata Classic",
+    "name": "Throne of the Tides",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::dungeon::the stonecore",
+    "expansion": "Cata Classic",
+    "name": "The Stonecore",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::dungeon::the vortex pinnacle",
+    "expansion": "Cata Classic",
+    "name": "The Vortex Pinnacle",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::dungeon::lost city of the tol'vir",
+    "expansion": "Cata Classic",
+    "name": "Lost City of the Tol'vir",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::dungeon::grim batol",
+    "expansion": "Cata Classic",
+    "name": "Grim Batol",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::dungeon::halls of origination",
+    "expansion": "Cata Classic",
+    "name": "Halls of Origination",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::dungeon::the deadmines",
+    "expansion": "Cata Classic",
+    "name": "The Deadmines",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::dungeon::shadowfang keep",
+    "expansion": "Cata Classic",
+    "name": "Shadowfang Keep",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::raid::blackwing descent",
+    "expansion": "Cata Classic",
+    "name": "Blackwing Descent",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::raid::the bastion of twilight",
+    "expansion": "Cata Classic",
+    "name": "The Bastion of Twilight",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::raid::throne of the four winds",
+    "expansion": "Cata Classic",
+    "name": "Throne of the Four Winds",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::dungeon::zul'aman",
+    "expansion": "Cata Classic",
+    "name": "Zul'Aman",
+    "type": "Dungeon",
+    "phase": 3
+  },
+  {
+    "key": "cata classic::dungeon::zul'gurub",
+    "expansion": "Cata Classic",
+    "name": "Zul'Gurub",
+    "type": "Dungeon",
+    "phase": 3
+  },
+  {
+    "key": "cata classic::raid::firelands",
+    "expansion": "Cata Classic",
+    "name": "Firelands",
+    "type": "Raid",
+    "phase": 3
+  },
+  {
+    "key": "cata classic::dungeon::end time",
+    "expansion": "Cata Classic",
+    "name": "End Time",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "cata classic::dungeon::well of eternity",
+    "expansion": "Cata Classic",
+    "name": "Well of Eternity",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "cata classic::dungeon::hour of twilight",
+    "expansion": "Cata Classic",
+    "name": "Hour of Twilight",
+    "type": "Dungeon",
+    "phase": 4
+  },
+  {
+    "key": "cata classic::raid::dragon soul",
+    "expansion": "Cata Classic",
+    "name": "Dragon Soul",
+    "type": "Raid",
+    "phase": 4
+  },
+  {
+    "key": "cata classic::raid::baradin hold",
+    "expansion": "Cata Classic",
+    "name": "Baradin Hold",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::worldboss::world bosses",
+    "expansion": "Cata Classic",
+    "name": "World Bosses",
+    "type": "WorldBoss",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::worldboss::holiday bosses",
+    "expansion": "Cata Classic",
+    "name": "Holiday bosses",
+    "type": "WorldBoss",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::crafted::alchemy",
+    "expansion": "Cata Classic",
+    "name": "Alchemy",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::crafted::archaeology",
+    "expansion": "Cata Classic",
+    "name": "Archaeology",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::crafted::blacksmithing",
+    "expansion": "Cata Classic",
+    "name": "Blacksmithing",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::crafted::enchanting",
+    "expansion": "Cata Classic",
+    "name": "Enchanting",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::crafted::engineering",
+    "expansion": "Cata Classic",
+    "name": "Engineering",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::crafted::inscription",
+    "expansion": "Cata Classic",
+    "name": "Inscription",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::crafted::jewelcrafting",
+    "expansion": "Cata Classic",
+    "name": "Jewelcrafting",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::crafted::leatherworking",
+    "expansion": "Cata Classic",
+    "name": "Leatherworking",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::crafted::tailoring",
+    "expansion": "Cata Classic",
+    "name": "Tailoring",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::drop::rare elites",
+    "expansion": "Cata Classic",
+    "name": "Rare elites",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::drop::world drops",
+    "expansion": "Cata Classic",
+    "name": "World drops",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::pvp::arena points",
+    "expansion": "Cata Classic",
+    "name": "Arena Points",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::pvp::conquest points",
+    "expansion": "Cata Classic",
+    "name": "Conquest Points",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::pvp::honor points",
+    "expansion": "Cata Classic",
+    "name": "Honor Points",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::pvp::other pvp",
+    "expansion": "Cata Classic",
+    "name": "Other PvP",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::pvp::tol barad commendation",
+    "expansion": "Cata Classic",
+    "name": "Tol Barad Commendation",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::quest::quest rewards",
+    "expansion": "Cata Classic",
+    "name": "Quest Rewards",
+    "type": "Quest",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::alliance vanguard",
+    "expansion": "Cata Classic",
+    "name": "Alliance Vanguard",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::argent crusade",
+    "expansion": "Cata Classic",
+    "name": "Argent Crusade",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::ashtongue deathsworn",
+    "expansion": "Cata Classic",
+    "name": "Ashtongue Deathsworn",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::avengers of hyjal",
+    "expansion": "Cata Classic",
+    "name": "Avengers of Hyjal",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::baradin's wardens",
+    "expansion": "Cata Classic",
+    "name": "Baradin's Wardens",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::bilgewater cartel",
+    "expansion": "Cata Classic",
+    "name": "Bilgewater Cartel",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::brood of nozdormu",
+    "expansion": "Cata Classic",
+    "name": "Brood of Nozdormu",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::cenarion expedition",
+    "expansion": "Cata Classic",
+    "name": "Cenarion Expedition",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::darkspear trolls",
+    "expansion": "Cata Classic",
+    "name": "Darkspear Trolls",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::darnassus",
+    "expansion": "Cata Classic",
+    "name": "Darnassus",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::dragonmaw clan",
+    "expansion": "Cata Classic",
+    "name": "Dragonmaw Clan",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::exodar",
+    "expansion": "Cata Classic",
+    "name": "Exodar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::frenzyheart tribe",
+    "expansion": "Cata Classic",
+    "name": "Frenzyheart Tribe",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::gilneas",
+    "expansion": "Cata Classic",
+    "name": "Gilneas",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::gnomeregan",
+    "expansion": "Cata Classic",
+    "name": "Gnomeregan",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::guardians of hyjal",
+    "expansion": "Cata Classic",
+    "name": "Guardians of Hyjal",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::hellscream's reach",
+    "expansion": "Cata Classic",
+    "name": "Hellscream's Reach",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::honor hold",
+    "expansion": "Cata Classic",
+    "name": "Honor Hold",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::horde expedition",
+    "expansion": "Cata Classic",
+    "name": "Horde Expedition",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::ironforge",
+    "expansion": "Cata Classic",
+    "name": "Ironforge",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::keepers of time",
+    "expansion": "Cata Classic",
+    "name": "Keepers of Time",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::kirin tor",
+    "expansion": "Cata Classic",
+    "name": "Kirin Tor",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::knights of the ebon blade",
+    "expansion": "Cata Classic",
+    "name": "Knights of the Ebon Blade",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::kurenai",
+    "expansion": "Cata Classic",
+    "name": "Kurenai",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::lower city",
+    "expansion": "Cata Classic",
+    "name": "Lower City",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::netherwing",
+    "expansion": "Cata Classic",
+    "name": "Netherwing",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::ogri'la",
+    "expansion": "Cata Classic",
+    "name": "Ogri'la",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::orgrimmar",
+    "expansion": "Cata Classic",
+    "name": "Orgrimmar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::ramkahen",
+    "expansion": "Cata Classic",
+    "name": "Ramkahen",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::sha'tari skyguard",
+    "expansion": "Cata Classic",
+    "name": "Sha'tari Skyguard",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::shattered sun offensive",
+    "expansion": "Cata Classic",
+    "name": "Shattered Sun Offensive",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::silvermoon city",
+    "expansion": "Cata Classic",
+    "name": "Silvermoon City",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::sporeggar",
+    "expansion": "Cata Classic",
+    "name": "Sporeggar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::stormwind",
+    "expansion": "Cata Classic",
+    "name": "Stormwind",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the aldor",
+    "expansion": "Cata Classic",
+    "name": "The Aldor",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the ashen verdict",
+    "expansion": "Cata Classic",
+    "name": "The Ashen Verdict",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the consortium",
+    "expansion": "Cata Classic",
+    "name": "The Consortium",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the earthen ring",
+    "expansion": "Cata Classic",
+    "name": "The Earthen Ring",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the kalu'ak",
+    "expansion": "Cata Classic",
+    "name": "The Kalu'ak",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the mag'har",
+    "expansion": "Cata Classic",
+    "name": "The Mag'har",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the oracles",
+    "expansion": "Cata Classic",
+    "name": "The Oracles",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the scryers",
+    "expansion": "Cata Classic",
+    "name": "The Scryers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the sha'tar",
+    "expansion": "Cata Classic",
+    "name": "The Sha'tar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the silver covenant",
+    "expansion": "Cata Classic",
+    "name": "The Silver Covenant",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the sons of hodir",
+    "expansion": "Cata Classic",
+    "name": "The Sons of Hodir",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the sunreavers",
+    "expansion": "Cata Classic",
+    "name": "The Sunreavers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::the wyrmrest accord",
+    "expansion": "Cata Classic",
+    "name": "The Wyrmrest Accord",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::therazane",
+    "expansion": "Cata Classic",
+    "name": "Therazane",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::thrallmar",
+    "expansion": "Cata Classic",
+    "name": "Thrallmar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::thunder bluff",
+    "expansion": "Cata Classic",
+    "name": "Thunder Bluff",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::timbermaw hold",
+    "expansion": "Cata Classic",
+    "name": "Timbermaw Hold",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::tranquillien",
+    "expansion": "Cata Classic",
+    "name": "Tranquillien",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::undercity",
+    "expansion": "Cata Classic",
+    "name": "Undercity",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::reputation::wildhammer clan",
+    "expansion": "Cata Classic",
+    "name": "Wildhammer Clan",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::tabard::tabards",
+    "expansion": "Cata Classic",
+    "name": "Tabards",
+    "type": "Tabard",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::vendor::defiler's scourgestone",
+    "expansion": "Cata Classic",
+    "name": "Defiler's Scourgestone",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::vendor::dragon soul tier (t13)",
+    "expansion": "Cata Classic",
+    "name": "Dragon Soul tier (T13)",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::vendor::fissure stone fragment",
+    "expansion": "Cata Classic",
+    "name": "Fissure Stone Fragment",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::vendor::justice points",
+    "expansion": "Cata Classic",
+    "name": "Justice Points",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::vendor::molten front",
+    "expansion": "Cata Classic",
+    "name": "Molten Front",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::vendor::obsidian fragment",
+    "expansion": "Cata Classic",
+    "name": "Obsidian Fragment",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::vendor::sidereal essence",
+    "expansion": "Cata Classic",
+    "name": "Sidereal Essence",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::vendor::tier 11 (bwd, bot, throne of the four winds)",
+    "expansion": "Cata Classic",
+    "name": "Tier 11 (BWD, BoT, Throne of the Four Winds)",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::vendor::valor points",
+    "expansion": "Cata Classic",
+    "name": "Valor Points",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::dungeon::temple of the jade serpent",
+    "expansion": "MoP Classic",
+    "name": "Temple of the Jade Serpent",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::dungeon::stormstout brewery",
+    "expansion": "MoP Classic",
+    "name": "Stormstout Brewery",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::dungeon::shado-pan monastery",
+    "expansion": "MoP Classic",
+    "name": "Shado-Pan Monastery",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::dungeon::gate of the setting sun",
+    "expansion": "MoP Classic",
+    "name": "Gate of the Setting Sun",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::dungeon::siege of niuzao temple",
+    "expansion": "MoP Classic",
+    "name": "Siege of Niuzao Temple",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::dungeon::mogu'shan palace",
+    "expansion": "MoP Classic",
+    "name": "Mogu'shan Palace",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::dungeon::scarlet halls",
+    "expansion": "MoP Classic",
+    "name": "Scarlet Halls",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::dungeon::scarlet monastery",
+    "expansion": "MoP Classic",
+    "name": "Scarlet Monastery",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::dungeon::scholomance",
+    "expansion": "MoP Classic",
+    "name": "Scholomance",
+    "type": "Dungeon",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::raid::mogu'shan vaults",
+    "expansion": "MoP Classic",
+    "name": "Mogu'shan Vaults",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::raid::heart of fear",
+    "expansion": "MoP Classic",
+    "name": "Heart of Fear",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::raid::terrace of endless spring",
+    "expansion": "MoP Classic",
+    "name": "Terrace of Endless Spring",
+    "type": "Raid",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::raid::throne of thunder",
+    "expansion": "MoP Classic",
+    "name": "Throne of Thunder",
+    "type": "Raid",
+    "phase": 2
+  },
+  {
+    "key": "mop classic::raid::siege of orgrimmar",
+    "expansion": "MoP Classic",
+    "name": "Siege of Orgrimmar",
+    "type": "Raid",
+    "phase": 4
+  },
+  {
+    "key": "mop classic::raid::siege of orgrimmar (flex)",
+    "expansion": "MoP Classic",
+    "name": "Siege of Orgrimmar (Flex)",
+    "type": "Raid",
+    "phase": 4
+  },
+  {
+    "key": "mop classic::worldboss::world bosses",
+    "expansion": "MoP Classic",
+    "name": "World Bosses",
+    "type": "WorldBoss",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::worldboss::holiday bosses",
+    "expansion": "MoP Classic",
+    "name": "Holiday bosses",
+    "type": "WorldBoss",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::crafted::alchemy",
+    "expansion": "MoP Classic",
+    "name": "Alchemy",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::crafted::blacksmithing",
+    "expansion": "MoP Classic",
+    "name": "Blacksmithing",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::crafted::enchanting",
+    "expansion": "MoP Classic",
+    "name": "Enchanting",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::crafted::engineering",
+    "expansion": "MoP Classic",
+    "name": "Engineering",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::crafted::inscription",
+    "expansion": "MoP Classic",
+    "name": "Inscription",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::crafted::jewelcrafting",
+    "expansion": "MoP Classic",
+    "name": "Jewelcrafting",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::crafted::leatherworking",
+    "expansion": "MoP Classic",
+    "name": "Leatherworking",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::crafted::tailoring",
+    "expansion": "MoP Classic",
+    "name": "Tailoring",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::drop::rare elites",
+    "expansion": "MoP Classic",
+    "name": "Rare elites",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::drop::scenario rewards",
+    "expansion": "MoP Classic",
+    "name": "Scenario rewards",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::drop::world drops",
+    "expansion": "MoP Classic",
+    "name": "World drops",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::pvp::arathi basin mark of honor",
+    "expansion": "MoP Classic",
+    "name": "Arathi Basin Mark of Honor",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::pvp::arena points",
+    "expansion": "MoP Classic",
+    "name": "Arena Points",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::pvp::conquest points",
+    "expansion": "MoP Classic",
+    "name": "Conquest Points",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::pvp::honor points",
+    "expansion": "MoP Classic",
+    "name": "Honor Points",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::pvp::other pvp",
+    "expansion": "MoP Classic",
+    "name": "Other PvP",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::pvp::tol barad commendation",
+    "expansion": "MoP Classic",
+    "name": "Tol Barad Commendation",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::pvp::warsong gulch mark of honor",
+    "expansion": "MoP Classic",
+    "name": "Warsong Gulch Mark of Honor",
+    "type": "PvP",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::quest::quest rewards",
+    "expansion": "MoP Classic",
+    "name": "Quest Rewards",
+    "type": "Quest",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::alliance vanguard",
+    "expansion": "MoP Classic",
+    "name": "Alliance Vanguard",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::argent crusade",
+    "expansion": "MoP Classic",
+    "name": "Argent Crusade",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::ashtongue deathsworn",
+    "expansion": "MoP Classic",
+    "name": "Ashtongue Deathsworn",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::avengers of hyjal",
+    "expansion": "MoP Classic",
+    "name": "Avengers of Hyjal",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::baradin's wardens",
+    "expansion": "MoP Classic",
+    "name": "Baradin's Wardens",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::bilgewater cartel",
+    "expansion": "MoP Classic",
+    "name": "Bilgewater Cartel",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::brood of nozdormu",
+    "expansion": "MoP Classic",
+    "name": "Brood of Nozdormu",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::cenarion expedition",
+    "expansion": "MoP Classic",
+    "name": "Cenarion Expedition",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::darkspear trolls",
+    "expansion": "MoP Classic",
+    "name": "Darkspear Trolls",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::darnassus",
+    "expansion": "MoP Classic",
+    "name": "Darnassus",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::dominance offensive",
+    "expansion": "MoP Classic",
+    "name": "Dominance Offensive",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::dragonmaw clan",
+    "expansion": "MoP Classic",
+    "name": "Dragonmaw Clan",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::emperor shaohao",
+    "expansion": "MoP Classic",
+    "name": "Emperor Shaohao",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::exodar",
+    "expansion": "MoP Classic",
+    "name": "Exodar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::frenzyheart tribe",
+    "expansion": "MoP Classic",
+    "name": "Frenzyheart Tribe",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::gilneas",
+    "expansion": "MoP Classic",
+    "name": "Gilneas",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::gnomeregan",
+    "expansion": "MoP Classic",
+    "name": "Gnomeregan",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::golden lotus",
+    "expansion": "MoP Classic",
+    "name": "Golden Lotus",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::guardians of hyjal",
+    "expansion": "MoP Classic",
+    "name": "Guardians of Hyjal",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::hellscream's reach",
+    "expansion": "MoP Classic",
+    "name": "Hellscream's Reach",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::honor hold",
+    "expansion": "MoP Classic",
+    "name": "Honor Hold",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::horde expedition",
+    "expansion": "MoP Classic",
+    "name": "Horde Expedition",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::ironforge",
+    "expansion": "MoP Classic",
+    "name": "Ironforge",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::keepers of time",
+    "expansion": "MoP Classic",
+    "name": "Keepers of Time",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::kirin tor",
+    "expansion": "MoP Classic",
+    "name": "Kirin Tor",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::kirin tor offensive",
+    "expansion": "MoP Classic",
+    "name": "Kirin Tor Offensive",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::knights of the ebon blade",
+    "expansion": "MoP Classic",
+    "name": "Knights of the Ebon Blade",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::kurenai",
+    "expansion": "MoP Classic",
+    "name": "Kurenai",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::lower city",
+    "expansion": "MoP Classic",
+    "name": "Lower City",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::nat pagle",
+    "expansion": "MoP Classic",
+    "name": "Nat Pagle",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::netherwing",
+    "expansion": "MoP Classic",
+    "name": "Netherwing",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::ogri'la",
+    "expansion": "MoP Classic",
+    "name": "Ogri'la",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::operation: shieldwall",
+    "expansion": "MoP Classic",
+    "name": "Operation: Shieldwall",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::order of the cloud serpent",
+    "expansion": "MoP Classic",
+    "name": "Order of the Cloud Serpent",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::orgrimmar",
+    "expansion": "MoP Classic",
+    "name": "Orgrimmar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::ramkahen",
+    "expansion": "MoP Classic",
+    "name": "Ramkahen",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::sha'tari skyguard",
+    "expansion": "MoP Classic",
+    "name": "Sha'tari Skyguard",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::shado-pan",
+    "expansion": "MoP Classic",
+    "name": "Shado-Pan",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::shado-pan assault",
+    "expansion": "MoP Classic",
+    "name": "Shado-Pan Assault",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::shattered sun offensive",
+    "expansion": "MoP Classic",
+    "name": "Shattered Sun Offensive",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::silvermoon city",
+    "expansion": "MoP Classic",
+    "name": "Silvermoon City",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::sporeggar",
+    "expansion": "MoP Classic",
+    "name": "Sporeggar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::stormwind",
+    "expansion": "MoP Classic",
+    "name": "Stormwind",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::sunreaver onslaught",
+    "expansion": "MoP Classic",
+    "name": "Sunreaver Onslaught",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the aldor",
+    "expansion": "MoP Classic",
+    "name": "The Aldor",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the anglers",
+    "expansion": "MoP Classic",
+    "name": "The Anglers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the ashen verdict",
+    "expansion": "MoP Classic",
+    "name": "The Ashen Verdict",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the august celestials",
+    "expansion": "MoP Classic",
+    "name": "The August Celestials",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the consortium",
+    "expansion": "MoP Classic",
+    "name": "The Consortium",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the defilers",
+    "expansion": "MoP Classic",
+    "name": "The Defilers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the earthen ring",
+    "expansion": "MoP Classic",
+    "name": "The Earthen Ring",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the kalu'ak",
+    "expansion": "MoP Classic",
+    "name": "The Kalu'ak",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the klaxxi",
+    "expansion": "MoP Classic",
+    "name": "The Klaxxi",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the league of arathor",
+    "expansion": "MoP Classic",
+    "name": "The League of Arathor",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the lorewalkers",
+    "expansion": "MoP Classic",
+    "name": "The Lorewalkers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the mag'har",
+    "expansion": "MoP Classic",
+    "name": "The Mag'har",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the oracles",
+    "expansion": "MoP Classic",
+    "name": "The Oracles",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the scryers",
+    "expansion": "MoP Classic",
+    "name": "The Scryers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the sha'tar",
+    "expansion": "MoP Classic",
+    "name": "The Sha'tar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the silver covenant",
+    "expansion": "MoP Classic",
+    "name": "The Silver Covenant",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the sons of hodir",
+    "expansion": "MoP Classic",
+    "name": "The Sons of Hodir",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the sunreavers",
+    "expansion": "MoP Classic",
+    "name": "The Sunreavers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the tillers",
+    "expansion": "MoP Classic",
+    "name": "The Tillers",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::the wyrmrest accord",
+    "expansion": "MoP Classic",
+    "name": "The Wyrmrest Accord",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::therazane",
+    "expansion": "MoP Classic",
+    "name": "Therazane",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::thrallmar",
+    "expansion": "MoP Classic",
+    "name": "Thrallmar",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::thunder bluff",
+    "expansion": "MoP Classic",
+    "name": "Thunder Bluff",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::timbermaw hold",
+    "expansion": "MoP Classic",
+    "name": "Timbermaw Hold",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::tranquillien",
+    "expansion": "MoP Classic",
+    "name": "Tranquillien",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::undercity",
+    "expansion": "MoP Classic",
+    "name": "Undercity",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::reputation::wildhammer clan",
+    "expansion": "MoP Classic",
+    "name": "Wildhammer Clan",
+    "type": "Reputation",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::tabard::tabards",
+    "expansion": "MoP Classic",
+    "name": "Tabards",
+    "type": "Tabard",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::august stone cluster",
+    "expansion": "MoP Classic",
+    "name": "August Stone Cluster",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::august stone fragment",
+    "expansion": "MoP Classic",
+    "name": "August Stone Fragment",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::august stone shard",
+    "expansion": "MoP Classic",
+    "name": "August Stone Shard",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::defiler's scourgestone",
+    "expansion": "MoP Classic",
+    "name": "Defiler's Scourgestone",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::fissure stone fragment",
+    "expansion": "MoP Classic",
+    "name": "Fissure Stone Fragment",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::justice points",
+    "expansion": "MoP Classic",
+    "name": "Justice Points",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::kor'kron supplies",
+    "expansion": "MoP Classic",
+    "name": "Kor'kron supplies",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::obsidian fragment",
+    "expansion": "MoP Classic",
+    "name": "Obsidian Fragment",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::sidereal essence",
+    "expansion": "MoP Classic",
+    "name": "Sidereal Essence",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::siege of orgrimmar tier (t16)",
+    "expansion": "MoP Classic",
+    "name": "Siege of Orgrimmar tier (T16)",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::throne of thunder tier (t15)",
+    "expansion": "MoP Classic",
+    "name": "Throne of Thunder tier (T15)",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::tier 14 (mogu'shan vaults, heart of fear, terrace)",
+    "expansion": "MoP Classic",
+    "name": "Tier 14 (Mogu'shan Vaults, Heart of Fear, Terrace)",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::timeless isle",
+    "expansion": "MoP Classic",
+    "name": "Timeless Isle",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::valor points",
+    "expansion": "MoP Classic",
+    "name": "Valor Points",
+    "type": "Vendor",
+    "phase": 1
+  }
 ]
