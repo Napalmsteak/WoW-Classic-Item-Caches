@@ -31,6 +31,33 @@ out.
 
 ---
 
+## Tooltips
+
+Each item's `tooltipHtml` is the full in-game tooltip. Here is one item from each game version's
+file, rendered with a small stylesheet (see [Rendering tooltips](#rendering-tooltips)), as the
+[WoW Classic Raid Tool](https://github.com/Napalmsteak/WoW-Classic-Raid-Tool-Releases) shows them:
+
+<table>
+<tr>
+<td align="center" valign="top"><img src="screenshots/tooltip-classic-era.png" width="380" alt="Thunderfury tooltip"><br><b>Classic Era</b>: Thunderfury</td>
+<td align="center" valign="top"><img src="screenshots/tooltip-season-of-discovery.png" width="380" alt="Aegis of the Scarlet Bastion tooltip"><br><b>Season of Discovery</b>: Aegis of the Scarlet Bastion</td>
+</tr>
+<tr>
+<td align="center" valign="top"><img src="screenshots/tooltip-forever.png" width="380" alt="Atiesh tooltip with its changes from Classic"><br><b>Forever</b>: Atiesh, with its <code>changeFromClassic</code> lines</td>
+<td align="center" valign="top"><img src="screenshots/tooltip-tbc.png" width="380" alt="Warglaive of Azzinoth tooltip"><br><b>TBC Classic</b>: Warglaive of Azzinoth</td>
+</tr>
+<tr>
+<td align="center" valign="top"><img src="screenshots/tooltip-wrath.png" width="380" alt="Shadowmourne tooltip"><br><b>Wrath Classic</b>: Shadowmourne</td>
+<td align="center" valign="top"><img src="screenshots/tooltip-cata.png" width="380" alt="Dragonwrath tooltip"><br><b>Cata Classic</b>: Dragonwrath, Tarecgosa's Rest</td>
+</tr>
+<tr>
+<td align="center" valign="top"><img src="screenshots/tooltip-mop.png" width="380" alt="Xal'atoh tooltip"><br><b>MoP Classic</b>: Xal'atoh, Desecrated Image of Gorehowl</td>
+<td align="center" valign="top"><img src="screenshots/tooltip-tier-set.png" width="380" alt="Sanctified Bloodmage Hood tooltip with sockets and set bonuses"><br><b>A tier set piece</b> (Wrath, Mage T10): sockets, class, set pieces and bonuses</td>
+</tr>
+</table>
+
+---
+
 ## Game versions
 
 | Expansion name in the data | Game | Wowhead base URL |
@@ -171,6 +198,47 @@ https://wow.zamimg.com/images/wow/icons/large/<iconName>.jpg   (56 × 56 px)
 Example: `"iconName": "inv_helmet_20"` → `https://wow.zamimg.com/images/wow/icons/large/inv_helmet_20.jpg`
 
 For fully offline use, download the icons you need once and serve them locally.
+
+### Rendering tooltips
+
+`tooltipHtml` is Wowhead's tooltip markup: nested tables, with classes for colors. Drop it into
+a container and add a few styles, and it looks like the screenshots above:
+
+```html
+<div class="wow-tooltip"><!-- item.tooltipHtml --></div>
+```
+
+```css
+.wow-tooltip {
+  max-width: 380px;
+  padding: 8px 10px;
+  background: linear-gradient(to bottom, #0e0e12, #1a1a22);
+  border: 1px solid #3f3f4a;
+  border-radius: 4px;
+  font: 13px/1.4 'Helvetica Neue', Arial, sans-serif;
+  color: #fff;
+}
+.wow-tooltip table { border-collapse: collapse; width: 100%; }
+.wow-tooltip td { padding: 0; }
+.wow-tooltip th { text-align: right; padding: 0 0 0 16px; }   /* "Sword", "Speed 1.90", "Plate"… */
+.wow-tooltip a { color: inherit; text-decoration: none; }
+
+/* Item quality (the name), and green "Equip:"/"Use:" lines (q2) */
+.wow-tooltip .q0 { color: #9d9d9d; }  .wow-tooltip .q1 { color: #fff; }
+.wow-tooltip .q2 { color: #1eff00; }  .wow-tooltip .q3 { color: #0070dd; }
+.wow-tooltip .q4 { color: #a335ee; }  .wow-tooltip .q5 { color: #ff8000; }
+.wow-tooltip .q6 { color: #e6cc80; }  .wow-tooltip .q7 { color: #00ccff; }
+.wow-tooltip .q  { color: #ffd100; }  /* item level, set names */
+
+.wow-tooltip .whtt-extra, .wow-tooltip .whtt-sellprice { color: #9d9d9d; font-size: 12px; }
+.wow-tooltip .moneygold   { color: #ffd700; }  .wow-tooltip .moneygold::after   { content: 'g '; }
+.wow-tooltip .moneysilver { color: #c0c0c0; }  .wow-tooltip .moneysilver::after { content: 's '; }
+.wow-tooltip .moneycopper { color: #cd7f32; }  .wow-tooltip .moneycopper::after { content: 'c'; }
+```
+
+Sockets are text links, such as `<a class="socket-red q0">Red Socket</a>` (with `socket-yellow`,
+`socket-blue`, `socket-meta` and so on). Style them as you like; the screenshots swap them for
+socket icons.
 
 ---
 
