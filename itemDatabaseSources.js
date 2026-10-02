@@ -242,10 +242,24 @@ exports.ITEM_DATABASE_SOURCES = [
     "phase": 1
   },
   {
+    "key": "classic era::drop::rare elites",
+    "expansion": "Classic Era",
+    "name": "Rare elites",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
     "key": "classic era::drop::world drops",
     "expansion": "Classic Era",
     "name": "World drops",
     "type": "Drop",
+    "phase": 1
+  },
+  {
+    "key": "classic era::other::other sources",
+    "expansion": "Classic Era",
+    "name": "Other sources",
+    "type": "Other",
     "phase": 1
   },
   {
@@ -260,6 +274,76 @@ exports.ITEM_DATABASE_SOURCES = [
     "expansion": "Classic Era",
     "name": "Quest Rewards",
     "type": "Quest",
+    "phase": 1
+  },
+  {
+    "key": "classic era::recipe::alchemy",
+    "expansion": "Classic Era",
+    "name": "Alchemy",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "classic era::recipe::blacksmithing",
+    "expansion": "Classic Era",
+    "name": "Blacksmithing",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "classic era::recipe::books",
+    "expansion": "Classic Era",
+    "name": "Books",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "classic era::recipe::cooking",
+    "expansion": "Classic Era",
+    "name": "Cooking",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "classic era::recipe::enchanting",
+    "expansion": "Classic Era",
+    "name": "Enchanting",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "classic era::recipe::engineering",
+    "expansion": "Classic Era",
+    "name": "Engineering",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "classic era::recipe::first aid",
+    "expansion": "Classic Era",
+    "name": "First Aid",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "classic era::recipe::fishing",
+    "expansion": "Classic Era",
+    "name": "Fishing",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "classic era::recipe::leatherworking",
+    "expansion": "Classic Era",
+    "name": "Leatherworking",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "classic era::recipe::tailoring",
+    "expansion": "Classic Era",
+    "name": "Tailoring",
+    "type": "Recipe",
     "phase": 1
   },
   {
@@ -295,6 +379,13 @@ exports.ITEM_DATABASE_SOURCES = [
     "expansion": "Classic Era",
     "name": "Tabards",
     "type": "Tabard",
+    "phase": 1
+  },
+  {
+    "key": "classic era::vendor::vendors",
+    "expansion": "Classic Era",
+    "name": "Vendors",
+    "type": "Vendor",
     "phase": 1
   },
   {

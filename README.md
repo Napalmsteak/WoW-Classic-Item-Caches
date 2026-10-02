@@ -5,32 +5,36 @@ Discovery, Forever, TBC Classic, Wrath Classic, Cataclysm Classic and Mists of P
 Each item comes with its Wowhead tooltip, its icon (included as an image) and the sources it
 comes from.
 
-It covers the gear raid leaders and players plan around: **51,247 items** with every way to get
-them. That includes dungeon and raid bosses, world bosses, crafting, vendors (including tier-token
-and currency vendors), reputation, quests, PvP, tabards, and notable world and holiday drops.
+It covers **56,059 items** with every way to get them: dungeon and raid bosses, world bosses,
+crafting, vendors (including tier-token and currency vendors), reputation, quests, PvP, tabards,
+rare elites, and world and holiday drops. Classic Era also has every leveling weapon and armor
+piece from level 1 to 60, and every recipe with the materials it needs.
 
-Use it to build BiS lists, wishlists, loot trackers, gear planners or item search, entirely
-offline: tooltips and icons included, with no calls to Wowhead or Blizzard at runtime. These are the same files the
+Use it to build BiS lists, wishlists, loot trackers, gear planners, leveling guides, crafting and
+gold-farming tools or item search, entirely offline: tooltips and icons included, with no calls
+to Wowhead or Blizzard at runtime. These are the same files the
 [WoW Classic Raid Tool](https://github.com/Napalmsteak/WoW-Classic-Raid-Tool-Releases) desktop
 app ships with.
 
 | File | Purpose |
 |---|---|
-| `itemDatabaseSources.json` | Every source the items reference (508): dungeons, raids, world bosses, professions, vendors, reputations and more. Plain JSON, usable from any language |
+| `itemDatabaseSources.json` | Every source the items reference (521): dungeons, raids, world bosses, professions, recipe groups, vendors, reputations and more. Plain JSON, usable from any language |
 | `itemDatabaseSources.js` | The same list as a CommonJS module, for Node.js / TypeScript |
-| `Classic Era Cache.json` | Classic Era items (3,684 · 7.1 MB) |
+| `Classic Era Cache.json` | Classic Era items, including leveling gear and recipes (8,496 · 14.5 MB) |
 | `Season of Discovery Cache.json` | Season of Discovery items (5,985 · 14.5 MB) |
 | `Forever Cache.json` | Forever items (4,940 · 10.8 MB). **Beta snapshot**, see below |
 | `TBC Classic Cache.json` | TBC Classic items (5,510 · 11.8 MB) |
 | `Wrath Classic Cache.json` | Wrath Classic items (9,723 · 22.2 MB) |
 | `Cata Classic Cache.json` | Cataclysm Classic items (8,234 · 17.3 MB) |
 | `MoP Classic Cache.json` | Mists of Pandaria Classic items (13,171 · 27.7 MB) |
-| `icons/` | Every item's icon, `<iconName>.jpg` (5,303 · 36 × 36 px · 23 MB) |
+| `icons/` | Every item's icon, `<iconName>.jpg` (5,346 · 36 × 36 px · 5.8 MB) |
 | `sockets/` | Socket images for tooltips, `socket-<color>.gif` (red, yellow, blue, meta, prismatic, cogwheel, hydraulic) |
 
-The data is gear-focused. Most items are rare (blue) or epic (purple). Uncommon (green) items are
-included where they come from crafting, quests or reputation. Low-level leveling drops are left
-out.
+Most items are weapons and armor, and every item level is covered. **Classic Era** has the full
+set: every uncommon (green), rare (blue) and epic (purple) weapon and armor piece at every level,
+including world drops, plus every recipe (patterns, plans, formulas, schematics and more). The
+other game versions have the gear from dungeons, raids, crafting, vendors, reputation, quests and
+PvP, plus the recipes bosses drop. Their leveling gear and full recipe lists are being added next.
 
 ---
 
@@ -56,6 +60,10 @@ file, rendered with a small stylesheet (see [Rendering tooltips](#rendering-tool
 <tr>
 <td align="center" valign="top"><img src="screenshots/tooltip-mop.png" width="380" alt="Xal'atoh tooltip"><br><b>MoP Classic</b>: Xal'atoh, Desecrated Image of Gorehowl</td>
 <td align="center" valign="top"><img src="screenshots/tooltip-tier-set.png" width="380" alt="Sanctified Bloodmage Hood tooltip with sockets and set bonuses"><br><b>A tier set piece</b> (Wrath, Mage T10): sockets, class, set pieces and bonuses</td>
+</tr>
+<tr>
+<td align="center" valign="top"><img src="screenshots/tooltip-recipe-pattern.png" width="314" alt="Pattern: Fine Leather Boots tooltip with the boots it makes and their materials"><br><b>A recipe</b> (Classic Era): the item it makes and its materials</td>
+<td align="center" valign="top"><img src="screenshots/tooltip-recipe-formula.png" width="380" alt="Formula: Enchant Weapon - Unholy tooltip with its materials and rod"><br><b>An enchanting formula</b> (Classic Era): its materials and rod</td>
 </tr>
 </table>
 
@@ -111,25 +119,26 @@ anywhere, or `require()` the `.js` in Node.js (`ITEM_DATABASE_SOURCES`).
 | `Raid` | Raid bosses | Molten Core, Icecrown Citadel |
 | `WorldBoss` | Outdoor world bosses, holiday and seasonal bosses | World Bosses, Holiday bosses, Scourge Invasion |
 | `Crafted` | Made with a profession | Blacksmithing, Tailoring, Jewelcrafting |
-| `Vendor` | Bought from vendors, including tier tokens and currencies | Naxxramas tier (T7), Emblem of Frost, Champion's Seal, Timeless Isle |
+| `Recipe` | Recipe items, by profession (the item also has a source for where the recipe comes from) | Leatherworking, Enchanting, Cooking, Books |
+| `Vendor` | Bought from vendors, including tier tokens and currencies | Vendors, Naxxramas tier (T7), Emblem of Frost, Champion's Seal, Timeless Isle |
 | `Reputation` | Faction reputation rewards | The Aldor, Argent Crusade, Golden Lotus |
 | `Quest` | Quest rewards | Quest rewards |
 | `PvP` | Honor, arena and battleground gear | Honor Points, Arena Points, Warsong Gulch Mark of Honor |
 | `Tabard` | Tabards | Tabards |
-| `Drop` | Notable world drops: rare elites, containers, world epics, scenarios | Rare elites, World drops, Scenario rewards |
-| `Other` | Forever only: achievements and sources not yet known | Achievement, Unknown source |
+| `Drop` | World drops: rare elites, containers, world epics, scenarios | Rare elites, World drops, Scenario rewards |
+| `Other` | Sources that fit no other type; in Forever, achievements and sources not yet known | Other sources, Achievement, Unknown source |
 
 ### Sources per game version
 
-| Expansion | Dungeon | Raid | World Boss | Crafted | Vendor | Reputation | Quest | PvP | Tabard | Drop | Other | Total |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Classic Era | 20 | 7 | 2 | 5 | — | 4 | 1 | 1 | 1 | 1 | — | 42 |
-| Season of Discovery | 12 | 10 | 2 | 5 | 8 | 8 | 1 | 2 | 1 | 1 | — | 50 |
-| Forever | 28 | 3 | — | 1 | 1 | — | 1 | — | — | 1 | 2 | 37 |
-| TBC Classic | 16 | 9 | 2 | 7 | 1 | 20 | 1 | 3 | 1 | 2 | — | 62 |
-| Wrath Classic | 16 | 9 | 2 | 8 | 13 | 33 | 1 | 7 | 1 | 2 | — | 92 |
-| Cata Classic | 14 | 6 | 2 | 9 | 9 | 54 | 1 | 5 | 1 | 2 | — | 103 |
-| MoP Classic | 9 | 6 | 2 | 8 | 14 | 71 | 1 | 7 | 1 | 3 | — | 122 |
+| Expansion | Dungeon | Raid | World Boss | Crafted | Recipe | Vendor | Reputation | Quest | PvP | Tabard | Drop | Other | Total |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Classic Era | 20 | 7 | 2 | 5 | 10 | 1 | 4 | 1 | 1 | 1 | 2 | 1 | 55 |
+| Season of Discovery | 12 | 10 | 2 | 5 | — | 8 | 8 | 1 | 2 | 1 | 1 | — | 50 |
+| Forever | 28 | 3 | — | 1 | — | 1 | — | 1 | — | — | 1 | 2 | 37 |
+| TBC Classic | 16 | 9 | 2 | 7 | — | 1 | 20 | 1 | 3 | 1 | 2 | — | 62 |
+| Wrath Classic | 16 | 9 | 2 | 8 | — | 13 | 33 | 1 | 7 | 1 | 2 | — | 92 |
+| Cata Classic | 14 | 6 | 2 | 9 | — | 9 | 54 | 1 | 5 | 1 | 2 | — | 103 |
+| MoP Classic | 9 | 6 | 2 | 8 | — | 14 | 71 | 1 | 7 | 1 | 3 | — | 122 |
 
 ---
 
@@ -170,6 +179,10 @@ Each file is a JSON array of item objects for one game version, built from Wowhe
   bonuses, requirements and sell price. Parse it for stats. The item name sits in
   `<b class="qN">`, where `N` is the quality: 0 poor, 1 common, 2 uncommon, 3 rare, 4 epic,
   5 legendary, 7 heirloom.
+- A recipe's `tooltipHtml` is the recipe's own tooltip, then the tooltip of the item it makes,
+  then its materials in `<div class="whtt-reagents">` ("Requires Light Leather (7), Coarse
+  Thread (2)"). Enchanting formulas make no item, so they go straight to their materials and the
+  rod they need ("Tools: Runed Arcanite Rod").
 - `changeFromClassic` only exists in `Forever Cache.json`. It lists Wowhead's summary of what
   Forever changed compared with Classic Era. `status: "new"` means an item that doesn't exist in
   Classic.
@@ -178,15 +191,15 @@ Each file is a JSON array of item objects for one game version, built from Wowhe
 
 An item with several source types counts once under each.
 
-| Expansion | Dungeon | Raid | World Boss | Crafted | Vendor | Reputation | Quest | PvP | Tabard | Drop | Other |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Classic Era | 790 | 999 | 312 | 678 | — | 158 | 593 | 311 | 19 | 56 | — |
-| Season of Discovery | 1,039 | 1,256 | 68 | 892 | 1,381 | 361 | 245 | 956 | 21 | 2 | — |
-| Forever | 342 | — | — | 692 | 1,579 | — | 615 | — | — | 585 | 1,267 |
-| TBC Classic | 703 | 1,107 | 51 | 1,279 | 243 | 245 | 343 | 1,466 | 51 | 96 | — |
-| Wrath Classic | 646 | 3,568 | 33 | 2,025 | 1,949 | 378 | 379 | 2,088 | 80 | 53 | — |
-| Cata Classic | 762 | 1,257 | 23 | 2,552 | 1,233 | 556 | 726 | 1,180 | 94 | 98 | — |
-| MoP Classic | 387 | 3,969 | 790 | 3,363 | 2,748 | 862 | 364 | 1,874 | 112 | 267 | — |
+| Expansion | Dungeon | Raid | World Boss | Crafted | Recipe | Vendor | Reputation | Quest | PvP | Tabard | Drop | Other |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Classic Era | 1,053 | 1,001 | 327 | 680 | 930 | 552 | 158 | 1,502 | 311 | 19 | 3,232 | 3 |
+| Season of Discovery | 1,039 | 1,256 | 68 | 892 | — | 1,381 | 361 | 245 | 956 | 21 | 2 | — |
+| Forever | 342 | — | — | 692 | — | 1,579 | — | 615 | — | — | 585 | 1,267 |
+| TBC Classic | 703 | 1,107 | 51 | 1,279 | — | 243 | 245 | 343 | 1,466 | 51 | 96 | — |
+| Wrath Classic | 646 | 3,568 | 33 | 2,025 | — | 1,949 | 378 | 379 | 2,088 | 80 | 53 | — |
+| Cata Classic | 762 | 1,257 | 23 | 2,552 | — | 1,233 | 556 | 726 | 1,180 | 94 | 98 | — |
+| MoP Classic | 387 | 3,969 | 790 | 3,363 | — | 2,748 | 862 | 364 | 1,874 | 112 | 267 | — |
 
 ### Icons
 
@@ -198,8 +211,8 @@ icons/<iconName>.jpg        36 × 36 px JPEG
 
 Example: `"iconName": "inv_helmet_20"` → `icons/inv_helmet_20.jpg`
 
-All 5,303 icons the items use are included. An `iconName` can be shared by many items, and
-3 Forever items have none (`iconName: null`). For other sizes, Wowhead's image CDN has the same
+All 5,346 icons the items use are included, and every item has one. An `iconName` can be shared
+by many items. For other sizes, Wowhead's image CDN has the same
 names, though you'd be online again:
 `https://wow.zamimg.com/images/wow/icons/{small,medium,large}/<iconName>.jpg` (18, 36 or 56 px).
 
@@ -330,7 +343,7 @@ const iconPath = (item) => item.iconName && `icons/${item.iconName}.jpg`;
 import { readFileSync } from 'fs';
 
 type SourceType =
-  | 'Dungeon' | 'Raid' | 'WorldBoss' | 'Crafted' | 'Vendor' | 'Reputation'
+  | 'Dungeon' | 'Raid' | 'WorldBoss' | 'Crafted' | 'Recipe' | 'Vendor' | 'Reputation'
   | 'Quest' | 'PvP' | 'Tabard' | 'Drop' | 'Other';
 
 interface Source {
@@ -632,7 +645,7 @@ for path in sorted(glob.glob("*Cache.json")):
     with open(path, encoding="utf-8") as f:
         all_items.extend(json.load(f))
 
-print(f"Total items: {len(all_items)}")  # 51,247
+print(f"Total items: {len(all_items)}")  # 56,059
 
 by_version_and_id = {(i["itemExpansion"], i["itemId"]): i for i in all_items}
 ```
