@@ -5,10 +5,10 @@ Discovery, Forever, TBC Classic, Wrath Classic, Cataclysm Classic and Mists of P
 Each item comes with its Wowhead tooltip, its icon (included as an image) and the sources it
 comes from.
 
-It covers **56,059 items** with every way to get them: dungeon and raid bosses, world bosses,
+It covers **68,092 items** with every way to get them: dungeon and raid bosses, world bosses,
 crafting, vendors (including tier-token and currency vendors), reputation, quests, PvP, tabards,
-rare elites, and world and holiday drops. Classic Era also has every leveling weapon and armor
-piece from level 1 to 60, and every recipe with the materials it needs.
+rare elites, and world and holiday drops. That includes every leveling weapon and armor piece at
+every level, and every recipe with the materials it needs.
 
 Use it to build BiS lists, wishlists, loot trackers, gear planners, leveling guides, crafting and
 gold-farming tools or item search, entirely offline: tooltips and icons included, with no calls
@@ -18,23 +18,23 @@ app ships with.
 
 | File | Purpose |
 |---|---|
-| `itemDatabaseSources.json` | Every source the items reference (521): dungeons, raids, world bosses, professions, recipe groups, vendors, reputations and more. Plain JSON, usable from any language |
+| `itemDatabaseSources.json` | Every source the items reference (582): dungeons, raids, world bosses, professions, recipe groups, vendors, reputations and more. Plain JSON, usable from any language |
 | `itemDatabaseSources.js` | The same list as a CommonJS module, for Node.js / TypeScript |
-| `Classic Era Cache.json` | Classic Era items, including leveling gear and recipes (8,496 · 14.5 MB) |
-| `Season of Discovery Cache.json` | Season of Discovery items (5,985 · 14.5 MB) |
+| `Classic Era Cache.json` | Classic Era items (8,490 · 14.5 MB) |
+| `Season of Discovery Cache.json` | Season of Discovery items (6,623 · 16.0 MB) |
 | `Forever Cache.json` | Forever items (4,940 · 10.8 MB). **Beta snapshot**, see below |
-| `TBC Classic Cache.json` | TBC Classic items (5,510 · 11.8 MB) |
-| `Wrath Classic Cache.json` | Wrath Classic items (9,723 · 22.2 MB) |
-| `Cata Classic Cache.json` | Cataclysm Classic items (8,234 · 17.3 MB) |
-| `MoP Classic Cache.json` | Mists of Pandaria Classic items (13,171 · 27.7 MB) |
-| `icons/` | Every item's icon, `<iconName>.jpg` (5,346 · 36 × 36 px · 5.8 MB) |
+| `TBC Classic Cache.json` | TBC Classic items (7,943 · 16.4 MB) |
+| `Wrath Classic Cache.json` | Wrath Classic items (12,136 · 26.4 MB) |
+| `Cata Classic Cache.json` | Cataclysm Classic items (12,199 · 23.3 MB) |
+| `MoP Classic Cache.json` | Mists of Pandaria Classic items (15,761 · 31.8 MB) |
+| `icons/` | Every item's icon, `<iconName>.jpg` (6,114 · 36 × 36 px · 6.7 MB) |
 | `sockets/` | Socket images for tooltips, `socket-<color>.gif` (red, yellow, blue, meta, prismatic, cogwheel, hydraulic) |
 
-Most items are weapons and armor, and every item level is covered. **Classic Era** has the full
-set: every uncommon (green), rare (blue) and epic (purple) weapon and armor piece at every level,
-including world drops, plus every recipe (patterns, plans, formulas, schematics and more). The
-other game versions have the gear from dungeons, raids, crafting, vendors, reputation, quests and
-PvP, plus the recipes bosses drop. Their leveling gear and full recipe lists are being added next.
+Most items are weapons and armor, and every item level is covered: every uncommon (green), rare
+(blue) and epic (purple) weapon and armor piece, including world drops and quest rewards, plus
+every recipe (patterns, plans, formulas, designs, schematics and more). Recipe items that exist in
+the game's data but can't be obtained are left out. Forever is the exception: its beta snapshot
+has the gear Wowhead lists for it so far, without leveling gear or recipe lists.
 
 ---
 
@@ -133,12 +133,12 @@ anywhere, or `require()` the `.js` in Node.js (`ITEM_DATABASE_SOURCES`).
 | Expansion | Dungeon | Raid | World Boss | Crafted | Recipe | Vendor | Reputation | Quest | PvP | Tabard | Drop | Other | Total |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Classic Era | 20 | 7 | 2 | 5 | 10 | 1 | 4 | 1 | 1 | 1 | 2 | 1 | 55 |
-| Season of Discovery | 12 | 10 | 2 | 5 | — | 8 | 8 | 1 | 2 | 1 | 1 | — | 50 |
+| Season of Discovery | 12 | 10 | 2 | 5 | 9 | 9 | 8 | 1 | 2 | 1 | 2 | — | 61 |
 | Forever | 28 | 3 | — | 1 | — | 1 | — | 1 | — | — | 1 | 2 | 37 |
-| TBC Classic | 16 | 9 | 2 | 7 | — | 1 | 20 | 1 | 3 | 1 | 2 | — | 62 |
-| Wrath Classic | 16 | 9 | 2 | 8 | — | 13 | 33 | 1 | 7 | 1 | 2 | — | 92 |
-| Cata Classic | 14 | 6 | 2 | 9 | — | 9 | 54 | 1 | 5 | 1 | 2 | — | 103 |
-| MoP Classic | 9 | 6 | 2 | 8 | — | 14 | 71 | 1 | 7 | 1 | 3 | — | 122 |
+| TBC Classic | 16 | 9 | 2 | 7 | 11 | 2 | 20 | 1 | 3 | 1 | 2 | — | 74 |
+| Wrath Classic | 16 | 9 | 2 | 8 | 12 | 14 | 33 | 1 | 7 | 1 | 2 | 1 | 106 |
+| Cata Classic | 14 | 6 | 2 | 9 | 10 | 10 | 54 | 1 | 5 | 1 | 2 | — | 114 |
+| MoP Classic | 9 | 6 | 2 | 9 | 10 | 15 | 71 | 1 | 7 | 1 | 3 | 1 | 135 |
 
 ---
 
@@ -193,13 +193,13 @@ An item with several source types counts once under each.
 
 | Expansion | Dungeon | Raid | World Boss | Crafted | Recipe | Vendor | Reputation | Quest | PvP | Tabard | Drop | Other |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Classic Era | 1,053 | 1,001 | 327 | 680 | 930 | 552 | 158 | 1,502 | 311 | 19 | 3,232 | 3 |
-| Season of Discovery | 1,039 | 1,256 | 68 | 892 | — | 1,381 | 361 | 245 | 956 | 21 | 2 | — |
+| Classic Era | 1,053 | 1,001 | 327 | 680 | 924 | 552 | 158 | 1,502 | 311 | 19 | 3,232 | 3 |
+| Season of Discovery | 1,273 | 1,312 | 68 | 892 | 267 | 1,568 | 361 | 269 | 956 | 21 | 141 | — |
 | Forever | 342 | — | — | 692 | — | 1,579 | — | 615 | — | — | 585 | 1,267 |
-| TBC Classic | 703 | 1,107 | 51 | 1,279 | — | 243 | 245 | 343 | 1,466 | 51 | 96 | — |
-| Wrath Classic | 646 | 3,568 | 33 | 2,025 | — | 1,949 | 378 | 379 | 2,088 | 80 | 53 | — |
-| Cata Classic | 762 | 1,257 | 23 | 2,552 | — | 1,233 | 556 | 726 | 1,180 | 94 | 98 | — |
-| MoP Classic | 387 | 3,969 | 790 | 3,363 | — | 2,748 | 862 | 364 | 1,874 | 112 | 267 | — |
+| TBC Classic | 735 | 1,130 | 57 | 1,279 | 799 | 777 | 245 | 1,093 | 1,466 | 51 | 1,190 | — |
+| Wrath Classic | 660 | 3,569 | 40 | 2,025 | 487 | 2,277 | 378 | 1,430 | 2,088 | 80 | 1,024 | 2 |
+| Cata Classic | 776 | 1,257 | 42 | 2,552 | 589 | 1,837 | 556 | 3,401 | 1,180 | 94 | 714 | — |
+| MoP Classic | 425 | 3,969 | 812 | 3,368 | 280 | 3,575 | 862 | 1,321 | 1,874 | 112 | 1,064 | 3 |
 
 ### Icons
 
@@ -211,7 +211,7 @@ icons/<iconName>.jpg        36 × 36 px JPEG
 
 Example: `"iconName": "inv_helmet_20"` → `icons/inv_helmet_20.jpg`
 
-All 5,346 icons the items use are included, and every item has one. An `iconName` can be shared
+All 6,114 icons the items use are included, and every item has one. An `iconName` can be shared
 by many items. For other sizes, Wowhead's image CDN has the same
 names, though you'd be online again:
 `https://wow.zamimg.com/images/wow/icons/{small,medium,large}/<iconName>.jpg` (18, 36 or 56 px).
@@ -645,7 +645,7 @@ for path in sorted(glob.glob("*Cache.json")):
     with open(path, encoding="utf-8") as f:
         all_items.extend(json.load(f))
 
-print(f"Total items: {len(all_items)}")  # 56,059
+print(f"Total items: {len(all_items)}")  # 68,092
 
 by_version_and_id = {(i["itemExpansion"], i["itemId"]): i for i in all_items}
 ```

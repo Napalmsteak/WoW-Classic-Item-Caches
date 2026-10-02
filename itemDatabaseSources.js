@@ -599,6 +599,13 @@ exports.ITEM_DATABASE_SOURCES = [
     "phase": 1
   },
   {
+    "key": "season of discovery::drop::world drops",
+    "expansion": "Season of Discovery",
+    "name": "World drops",
+    "type": "Drop",
+    "phase": 1
+  },
+  {
     "key": "season of discovery::pvp::blood moon",
     "expansion": "Season of Discovery",
     "name": "Blood Moon",
@@ -617,6 +624,69 @@ exports.ITEM_DATABASE_SOURCES = [
     "expansion": "Season of Discovery",
     "name": "Quest Rewards",
     "type": "Quest",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::recipe::alchemy",
+    "expansion": "Season of Discovery",
+    "name": "Alchemy",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::recipe::blacksmithing",
+    "expansion": "Season of Discovery",
+    "name": "Blacksmithing",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::recipe::books",
+    "expansion": "Season of Discovery",
+    "name": "Books",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::recipe::cooking",
+    "expansion": "Season of Discovery",
+    "name": "Cooking",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::recipe::enchanting",
+    "expansion": "Season of Discovery",
+    "name": "Enchanting",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::recipe::engineering",
+    "expansion": "Season of Discovery",
+    "name": "Engineering",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::recipe::first aid",
+    "expansion": "Season of Discovery",
+    "name": "First Aid",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::recipe::leatherworking",
+    "expansion": "Season of Discovery",
+    "name": "Leatherworking",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::recipe::tailoring",
+    "expansion": "Season of Discovery",
+    "name": "Tailoring",
+    "type": "Recipe",
     "phase": 1
   },
   {
@@ -735,6 +805,13 @@ exports.ITEM_DATABASE_SOURCES = [
     "key": "season of discovery::vendor::temple of ahn'qiraj tier",
     "expansion": "Season of Discovery",
     "name": "Temple of Ahn'Qiraj tier",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "season of discovery::vendor::vendors",
+    "expansion": "Season of Discovery",
+    "name": "Vendors",
     "type": "Vendor",
     "phase": 1
   },
@@ -1278,6 +1355,83 @@ exports.ITEM_DATABASE_SOURCES = [
     "phase": 1
   },
   {
+    "key": "tbc classic::recipe::alchemy",
+    "expansion": "TBC Classic",
+    "name": "Alchemy",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::recipe::blacksmithing",
+    "expansion": "TBC Classic",
+    "name": "Blacksmithing",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::recipe::books",
+    "expansion": "TBC Classic",
+    "name": "Books",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::recipe::cooking",
+    "expansion": "TBC Classic",
+    "name": "Cooking",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::recipe::enchanting",
+    "expansion": "TBC Classic",
+    "name": "Enchanting",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::recipe::engineering",
+    "expansion": "TBC Classic",
+    "name": "Engineering",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::recipe::first aid",
+    "expansion": "TBC Classic",
+    "name": "First Aid",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::recipe::fishing",
+    "expansion": "TBC Classic",
+    "name": "Fishing",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::recipe::jewelcrafting",
+    "expansion": "TBC Classic",
+    "name": "Jewelcrafting",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::recipe::leatherworking",
+    "expansion": "TBC Classic",
+    "name": "Leatherworking",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::recipe::tailoring",
+    "expansion": "TBC Classic",
+    "name": "Tailoring",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
     "key": "tbc classic::reputation::ashtongue deathsworn",
     "expansion": "TBC Classic",
     "name": "Ashtongue Deathsworn",
@@ -1428,6 +1582,13 @@ exports.ITEM_DATABASE_SOURCES = [
     "key": "tbc classic::vendor::badge of justice",
     "expansion": "TBC Classic",
     "name": "Badge of Justice",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "tbc classic::vendor::vendors",
+    "expansion": "TBC Classic",
+    "name": "Vendors",
     "type": "Vendor",
     "phase": 1
   },
@@ -1691,6 +1852,13 @@ exports.ITEM_DATABASE_SOURCES = [
     "phase": 1
   },
   {
+    "key": "wrath classic::other::other sources",
+    "expansion": "Wrath Classic",
+    "name": "Other sources",
+    "type": "Other",
+    "phase": 1
+  },
+  {
     "key": "wrath classic::pvp::arena points",
     "expansion": "Wrath Classic",
     "name": "Arena Points",
@@ -1744,6 +1912,90 @@ exports.ITEM_DATABASE_SOURCES = [
     "expansion": "Wrath Classic",
     "name": "Quest Rewards",
     "type": "Quest",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::recipe::alchemy",
+    "expansion": "Wrath Classic",
+    "name": "Alchemy",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::recipe::blacksmithing",
+    "expansion": "Wrath Classic",
+    "name": "Blacksmithing",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::recipe::books",
+    "expansion": "Wrath Classic",
+    "name": "Books",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::recipe::cooking",
+    "expansion": "Wrath Classic",
+    "name": "Cooking",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::recipe::enchanting",
+    "expansion": "Wrath Classic",
+    "name": "Enchanting",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::recipe::engineering",
+    "expansion": "Wrath Classic",
+    "name": "Engineering",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::recipe::first aid",
+    "expansion": "Wrath Classic",
+    "name": "First Aid",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::recipe::fishing",
+    "expansion": "Wrath Classic",
+    "name": "Fishing",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::recipe::inscription",
+    "expansion": "Wrath Classic",
+    "name": "Inscription",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::recipe::jewelcrafting",
+    "expansion": "Wrath Classic",
+    "name": "Jewelcrafting",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::recipe::leatherworking",
+    "expansion": "Wrath Classic",
+    "name": "Leatherworking",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "wrath classic::recipe::tailoring",
+    "expansion": "Wrath Classic",
+    "name": "Tailoring",
+    "type": "Recipe",
     "phase": 1
   },
   {
@@ -2076,6 +2328,13 @@ exports.ITEM_DATABASE_SOURCES = [
     "phase": 1
   },
   {
+    "key": "wrath classic::vendor::vendors",
+    "expansion": "Wrath Classic",
+    "name": "Vendors",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
     "key": "cata classic::dungeon::blackrock caverns",
     "expansion": "Cata Classic",
     "name": "Blackrock Caverns",
@@ -2346,6 +2605,76 @@ exports.ITEM_DATABASE_SOURCES = [
     "expansion": "Cata Classic",
     "name": "Quest Rewards",
     "type": "Quest",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::recipe::alchemy",
+    "expansion": "Cata Classic",
+    "name": "Alchemy",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::recipe::blacksmithing",
+    "expansion": "Cata Classic",
+    "name": "Blacksmithing",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::recipe::books",
+    "expansion": "Cata Classic",
+    "name": "Books",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::recipe::cooking",
+    "expansion": "Cata Classic",
+    "name": "Cooking",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::recipe::enchanting",
+    "expansion": "Cata Classic",
+    "name": "Enchanting",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::recipe::engineering",
+    "expansion": "Cata Classic",
+    "name": "Engineering",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::recipe::inscription",
+    "expansion": "Cata Classic",
+    "name": "Inscription",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::recipe::jewelcrafting",
+    "expansion": "Cata Classic",
+    "name": "Jewelcrafting",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::recipe::leatherworking",
+    "expansion": "Cata Classic",
+    "name": "Leatherworking",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "cata classic::recipe::tailoring",
+    "expansion": "Cata Classic",
+    "name": "Tailoring",
+    "type": "Recipe",
     "phase": 1
   },
   {
@@ -2797,6 +3126,13 @@ exports.ITEM_DATABASE_SOURCES = [
     "phase": 1
   },
   {
+    "key": "cata classic::vendor::vendors",
+    "expansion": "Cata Classic",
+    "name": "Vendors",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
     "key": "mop classic::dungeon::temple of the jade serpent",
     "expansion": "MoP Classic",
     "name": "Temple of the Jade Serpent",
@@ -2930,6 +3266,13 @@ exports.ITEM_DATABASE_SOURCES = [
     "phase": 1
   },
   {
+    "key": "mop classic::crafted::crafted",
+    "expansion": "MoP Classic",
+    "name": "Crafted",
+    "type": "Crafted",
+    "phase": 1
+  },
+  {
     "key": "mop classic::crafted::enchanting",
     "expansion": "MoP Classic",
     "name": "Enchanting",
@@ -2993,6 +3336,13 @@ exports.ITEM_DATABASE_SOURCES = [
     "phase": 1
   },
   {
+    "key": "mop classic::other::other sources",
+    "expansion": "MoP Classic",
+    "name": "Other sources",
+    "type": "Other",
+    "phase": 1
+  },
+  {
     "key": "mop classic::pvp::arathi basin mark of honor",
     "expansion": "MoP Classic",
     "name": "Arathi Basin Mark of Honor",
@@ -3046,6 +3396,76 @@ exports.ITEM_DATABASE_SOURCES = [
     "expansion": "MoP Classic",
     "name": "Quest Rewards",
     "type": "Quest",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::recipe::alchemy",
+    "expansion": "MoP Classic",
+    "name": "Alchemy",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::recipe::blacksmithing",
+    "expansion": "MoP Classic",
+    "name": "Blacksmithing",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::recipe::books",
+    "expansion": "MoP Classic",
+    "name": "Books",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::recipe::cooking",
+    "expansion": "MoP Classic",
+    "name": "Cooking",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::recipe::enchanting",
+    "expansion": "MoP Classic",
+    "name": "Enchanting",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::recipe::engineering",
+    "expansion": "MoP Classic",
+    "name": "Engineering",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::recipe::inscription",
+    "expansion": "MoP Classic",
+    "name": "Inscription",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::recipe::jewelcrafting",
+    "expansion": "MoP Classic",
+    "name": "Jewelcrafting",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::recipe::leatherworking",
+    "expansion": "MoP Classic",
+    "name": "Leatherworking",
+    "type": "Recipe",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::recipe::tailoring",
+    "expansion": "MoP Classic",
+    "name": "Tailoring",
+    "type": "Recipe",
     "phase": 1
   },
   {
@@ -3647,6 +4067,13 @@ exports.ITEM_DATABASE_SOURCES = [
     "key": "mop classic::vendor::valor points",
     "expansion": "MoP Classic",
     "name": "Valor Points",
+    "type": "Vendor",
+    "phase": 1
+  },
+  {
+    "key": "mop classic::vendor::vendors",
+    "expansion": "MoP Classic",
+    "name": "Vendors",
     "type": "Vendor",
     "phase": 1
   }

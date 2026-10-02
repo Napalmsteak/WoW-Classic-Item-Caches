@@ -60046,28 +60046,6 @@
     "lastUpdatedAt": "2026-10-02T11:17:02.419Z"
   },
   {
-    "itemId": 6376,
-    "name": "Formula: Enchant Boots - Minor Stamina",
-    "itemUrl": "https://www.wowhead.com/classic/item=6376",
-    "itemExpansion": "Classic Era",
-    "sourceKeys": [
-      "classic era::recipe::enchanting"
-    ],
-    "sourceLabels": [
-      "Enchanting"
-    ],
-    "sourceTypes": [
-      "Recipe"
-    ],
-    "sourcePhases": [
-      1
-    ],
-    "bossNames": [],
-    "iconName": "inv_misc_note_01",
-    "tooltipHtml": "<table><tr><td><!--nstart--><b class=\"q2\">Formula: Enchant Boots - Minor Stamina</b><!--nend--><!--ndstart--><!--ndend--><span class=\"q whtt-extra whtt-ilvl\"><br>Item Level <!--ilvl-->25</span><!--bo--><!--ue--><!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td>Requires <a href=\"/classic/skill=333/enchanting\" class=\"q1\">Enchanting</a> (125)<br><br><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Use: <!--useEffect:0:1--><a href=\"/classic/spell=7864/formula-enchant-boots-minor-stamina\" class=\"q2\">Teaches you how to permanently enchant a pair of boots to grant +1 Stamina.</a><!--useEffect:1--></span><!--useText:1--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneysilver\">2</span> <span class=\"moneycopper\">50</span></div><div class=\"q1 whtt-extra whtt-reagents\"><br />Requires <a href=\"/classic/item=10940/strange-dust\">Strange Dust</a>&nbsp;(8)<br />Tools: <a href=\"/classic/item=6339/runed-silver-rod\">Runed Silver Rod</a></div></td></tr></table>",
-    "lastUpdatedAt": "2026-10-02T11:17:02.419Z"
-  },
-  {
     "itemId": 16220,
     "name": "Formula: Enchant Boots - Spirit",
     "itemUrl": "https://www.wowhead.com/classic/item=16220",
@@ -61926,72 +61904,6 @@
     "lastUpdatedAt": "2026-10-02T11:17:02.419Z"
   },
   {
-    "itemId": 6222,
-    "name": "Formula: Imbue Chest - Minor Spirit",
-    "itemUrl": "https://www.wowhead.com/classic/item=6222",
-    "itemExpansion": "Classic Era",
-    "sourceKeys": [
-      "classic era::recipe::enchanting"
-    ],
-    "sourceLabels": [
-      "Enchanting"
-    ],
-    "sourceTypes": [
-      "Recipe"
-    ],
-    "sourcePhases": [
-      1
-    ],
-    "bossNames": [],
-    "iconName": "inv_misc_note_01",
-    "tooltipHtml": "<table><tr><td><!--nstart--><b class=\"q2\">Formula: Imbue Chest - Minor Spirit</b><!--nend--><!--ndstart--><!--ndend--><span class=\"q whtt-extra whtt-ilvl\"><br>Item Level <!--ilvl-->12</span><!--bo--><!--ue--><!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td>Requires <a href=\"/classic/skill=333/enchanting\" class=\"q1\">Enchanting</a> (60)<br><br><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Use: <!--useEffect:0:1--><a href=\"/classic/spell=7462/formula-imbue-chest-minor-spirit\" class=\"q2\">Teaches you how to temporarily imbue a piece of chest armor to give +3 Spirit for 60 min.</a><!--useEffect:1--></span><!--useText:1--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneycopper\">25</span></div></td></tr></table>",
-    "lastUpdatedAt": "2026-10-02T11:17:02.419Z"
-  },
-  {
-    "itemId": 6343,
-    "name": "Formula: Imbue Chest - Spirit",
-    "itemUrl": "https://www.wowhead.com/classic/item=6343",
-    "itemExpansion": "Classic Era",
-    "sourceKeys": [
-      "classic era::recipe::enchanting"
-    ],
-    "sourceLabels": [
-      "Enchanting"
-    ],
-    "sourceTypes": [
-      "Recipe"
-    ],
-    "sourcePhases": [
-      1
-    ],
-    "bossNames": [],
-    "iconName": "inv_misc_note_01",
-    "tooltipHtml": "<table><tr><td><!--nstart--><b class=\"q2\">Formula: Imbue Chest - Spirit</b><!--nend--><!--ndstart--><!--ndend--><span class=\"q whtt-extra whtt-ilvl\"><br>Item Level <!--ilvl-->14</span><!--bo--><!--ue--><!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td>Requires <a href=\"/classic/skill=333/enchanting\" class=\"q1\">Enchanting</a> (60)<br><br><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Use: <!--useEffect:0:1--><a href=\"/classic/spell=7462/formula-imbue-chest-minor-spirit\" class=\"q2\">Teaches you how to temporarily imbue a piece of chest armor to give +3 Spirit for 60 min.</a><!--useEffect:1--></span><!--useText:1--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneycopper\">87</span></div></td></tr></table>",
-    "lastUpdatedAt": "2026-10-02T11:17:02.419Z"
-  },
-  {
-    "itemId": 6345,
-    "name": "Formula: Imbue Cloak - Protection",
-    "itemUrl": "https://www.wowhead.com/classic/item=6345",
-    "itemExpansion": "Classic Era",
-    "sourceKeys": [
-      "classic era::recipe::enchanting"
-    ],
-    "sourceLabels": [
-      "Enchanting"
-    ],
-    "sourceTypes": [
-      "Recipe"
-    ],
-    "sourcePhases": [
-      1
-    ],
-    "bossNames": [],
-    "iconName": "inv_misc_note_01",
-    "tooltipHtml": "<table><tr><td><!--nstart--><b class=\"q2\">Formula: Imbue Cloak - Protection</b><!--nend--><!--ndstart--><!--ndend--><span class=\"q whtt-extra whtt-ilvl\"><br>Item Level <!--ilvl-->18</span><!--bo--><!--ue--><!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td>Requires <a href=\"/classic/skill=333/enchanting\" class=\"q1\">Enchanting</a> (90)<br><br><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Use: <!--useEffect:0:1--><a href=\"/classic/spell=7772/formula-enchant-cloak-minor-protection\" class=\"q2\">Teaches you how to permanently enchant a cloak to give 10 additional armor.</a><!--useEffect:1--></span><!--useText:1--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneysilver\">1</span></div></td></tr></table>",
-    "lastUpdatedAt": "2026-10-02T11:17:02.419Z"
-  },
-  {
     "itemId": 20754,
     "name": "Formula: Lesser Mana Oil",
     "itemUrl": "https://www.wowhead.com/classic/item=20754",
@@ -62114,28 +62026,6 @@
     "bossNames": [],
     "iconName": "inv_scroll_03",
     "tooltipHtml": "<table><tr><td><!--nstart--><b class=\"q1\">Formula: Powerful Anti-Venom</b><!--nend--><!--ndstart--><!--ndend--><span class=\"q whtt-extra whtt-ilvl\"><br>Item Level <!--ilvl-->58</span><!--bo--><br>Binds when picked up<!--ue--><!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td>Requires <a href=\"/classic/skill=129/first-aid\" class=\"q1\">First Aid</a> (300)<br>Requires <a href=\"/classic/faction=529/argent-dawn\" class=\"q1\">Argent Dawn</a> - Honored<br><br><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Use: <!--useEffect:0:1--><a href=\"/classic/spell=23788/formula-powerful-anti-venom\" class=\"q2\">Teaches you how to make Powerful Anti-Venom.</a><!--useEffect:1--></span><!--useText:1--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneygold\">2</span> <span class=\"moneysilver\">50</span></div><br /><span class=\"q1\"><a href=\"/classic/item=19440/powerful-anti-venom\">Powerful Anti-Venom</a></span><!--ndstart--><!--ndend--><span class=\"q whtt-extra whtt-ilvl\"><br>Item Level <!--ilvl-->58</span><!--bo--><!--ue--><!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><br>Requires <a href=\"/classic/skill=129/first-aid\" class=\"q1\">First Aid</a> (300)<br><br><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Use: <!--useEffect:0:1--><a href=\"/classic/spell=23786/powerful-anti-venom\" class=\"q2\">Target is cured of poisons up to level 60.</a> (1 Min Cooldown)<!--useEffect:1--></span><!--useText:1--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-extra whtt-maxstack\">Max Stack: 10</div><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneysilver\">5</span></div><div class=\"q1 whtt-extra whtt-reagents\"><br />Requires <a href=\"/classic/item=19441/huge-venom-sac\">Huge Venom Sac</a></div></td></tr></table>",
-    "lastUpdatedAt": "2026-10-02T11:17:02.419Z"
-  },
-  {
-    "itemId": 8547,
-    "name": "Formula: Powerful Smelling Salts ",
-    "itemUrl": "https://www.wowhead.com/classic/item=8547",
-    "itemExpansion": "Classic Era",
-    "sourceKeys": [
-      "classic era::recipe::first aid"
-    ],
-    "sourceLabels": [
-      "First Aid"
-    ],
-    "sourceTypes": [
-      "Recipe"
-    ],
-    "sourcePhases": [
-      1
-    ],
-    "bossNames": [],
-    "iconName": "inv_scroll_05",
-    "tooltipHtml": "<table><tr><td><!--nstart--><b class=\"q2\">Formula: Powerful Smelling Salts</b><!--nend--><!--ndstart--><!--ndend--><span class=\"q whtt-extra whtt-ilvl\"><br>Item Level <!--ilvl-->50</span><!--bo--><!--ue--><!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td>Requires <a href=\"/classic/skill=129/first-aid\" class=\"q1\">First Aid</a> (250)<br><br><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Use: <!--useEffect:0:1--><a href=\"/classic/spell=10845/powerful-smelling-salts\" class=\"q2\">Teaches you how to make Powerful Smelling Salts.</a><!--useEffect:1--></span><!--useText:1--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneygold\">20</span></div><br /><span class=\"q1\"><a href=\"/classic/item=8546/powerful-smelling-salts\">Powerful Smelling Salts</a></span><!--ndstart--><!--ndend--><span class=\"q whtt-extra whtt-ilvl\"><br>Item Level <!--ilvl-->50</span><!--bo--><br>Unique<!--ue--><!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><br>Requires <a href=\"/classic/skill=129/first-aid\" class=\"q1\">First Aid</a> (200)<br><br><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Use: <!--useEffect:0:1--><a href=\"/classic/spell=10850/powerful-smelling-salts\" class=\"q2\">Brings a dead player back to life with 15% of their health and mana. &nbsp;Cannot be used when in combat.</a><!--useEffect:1--></span><!--useText:1--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneycopper\">50</span></div><div class=\"q1 whtt-extra whtt-reagents\"><br />Requires <a href=\"/classic/item=8150/deeprock-salt\">Deeprock Salt</a>&nbsp;(4)</div></td></tr></table>",
     "lastUpdatedAt": "2026-10-02T11:17:02.419Z"
   },
   {
@@ -142779,28 +142669,6 @@
     "bossNames": [],
     "iconName": "inv_scroll_03",
     "tooltipHtml": "<table><tr><td><!--nstart--><b class=\"q1\">Recipe: Tender Wolf Steak</b><!--nend--><!--ndstart--><!--ndend--><span class=\"q whtt-extra whtt-ilvl\"><br>Item Level <!--ilvl-->45</span><!--bo--><!--ue--><!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td>Requires <a href=\"/classic/skill=185/cooking\" class=\"q1\">Cooking</a> (225)<br><br><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Use: <!--useEffect:0:1--><a href=\"/classic/spell=22481/recipe-tender-wolf-steak\" class=\"q2\">Teaches you how to cook a Tender Wolf Steak.</a><!--useEffect:1--></span><!--useText:1--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneysilver\">30</span></div><br /><span class=\"q1\"><a href=\"/classic/item=18045/tender-wolf-steak\">Tender Wolf Steak</a></span><!--ndstart--><!--ndend--><span class=\"q whtt-extra whtt-ilvl\"><br>Item Level <!--ilvl-->45</span><!--bo--><!--ue--><!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><br>Requires Level <!--rlvl-->40<br><br><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Use: <!--useEffect:0:1--><a href=\"/classic/spell=10256/food\" class=\"q2\">Restores 1392 health over 30 sec. &nbsp;Must remain seated while eating. &nbsp;If you spend at least 10 seconds eating you will become well fed and gain 12 Stamina and Spirit for 15 min.</a><!--useEffect:1--></span><!--useText:1--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-extra whtt-maxstack\">Max Stack: 20</div><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneysilver\">3</span></div><div class=\"q1 whtt-extra whtt-reagents\"><br />Requires <a href=\"/classic/item=12208/tender-wolf-meat\">Tender Wolf Meat</a>, <a href=\"/classic/item=3713/soothing-spices\">Soothing Spices</a></div></td></tr></table>",
-    "lastUpdatedAt": "2026-10-02T11:17:02.419Z"
-  },
-  {
-    "itemId": 7678,
-    "name": "Recipe: Thistle Tea",
-    "itemUrl": "https://www.wowhead.com/classic/item=7678",
-    "itemExpansion": "Classic Era",
-    "sourceKeys": [
-      "classic era::recipe::cooking"
-    ],
-    "sourceLabels": [
-      "Cooking"
-    ],
-    "sourceTypes": [
-      "Recipe"
-    ],
-    "sourcePhases": [
-      1
-    ],
-    "bossNames": [],
-    "iconName": "inv_scroll_03",
-    "tooltipHtml": "<table><tr><td><!--nstart--><b class=\"q1\">Recipe: Thistle Tea</b><!--nend--><!--ndstart--><!--ndend--><span class=\"q whtt-extra whtt-ilvl\"><br>Item Level <!--ilvl-->15</span><!--bo--><!--ue--><!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td>Requires <a href=\"/classic/skill=185/cooking\" class=\"q1\">Cooking</a> (60)<br><br><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Use: <!--useEffect:0:1--><a href=\"/classic/spell=9514/recipe-thistle-tea\" class=\"q2\">Teaches you how to brew a Thistle Tea.</a><!--useEffect:1--></span><!--useText:1--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneycopper\">50</span></div><br /><span class=\"q1\"><a href=\"/classic/item=7676/thistle-tea\">Thistle Tea</a></span><!--ndstart--><!--ndend--><span class=\"q whtt-extra whtt-ilvl\"><br>Item Level <!--ilvl-->15</span><!--bo--><!--ue--><!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><div class=\"wowhead-tooltip-item-classes\">Classes: <a href=\"/classic/class=4/rogue\" class=\"c4\">Rogue</a></div>Requires Level <!--rlvl-->5<br><br><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Use: <!--useEffect:0:1--><a href=\"/classic/spell=9512/restore-energy\" class=\"q2\">Instantly restores 100 energy.</a> (5 Min Cooldown)<!--useEffect:1--></span><!--useText:1--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-extra whtt-maxstack\">Max Stack: 10</div><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneycopper\">30</span></div><div class=\"q1 whtt-extra whtt-reagents\"><br />Requires <a href=\"/classic/item=2452/swiftthistle\">Swiftthistle</a>, <a href=\"/classic/item=159/refreshing-spring-water\">Refreshing Spring Water</a></div></td></tr></table>",
     "lastUpdatedAt": "2026-10-02T11:17:02.419Z"
   },
   {
