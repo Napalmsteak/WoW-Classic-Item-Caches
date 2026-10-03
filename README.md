@@ -13,7 +13,7 @@ every level, and every recipe with the materials it needs.
 Use it to build BiS lists, wishlists, loot trackers, gear planners, leveling guides, crafting and
 gold-farming tools or item search, entirely offline: tooltips and icons included, with no calls
 to Wowhead or Blizzard at runtime. These are the same files the
-[WoW Classic Raid Tool](https://github.com/Napalmsteak/WoW-Classic-Raid-Tool-Releases) desktop
+[WoW Classic Raid Tools](https://github.com/Napalmsteak/WoW-Classic-Raid-Tools-Releases) desktop
 app ships with.
 
 | File | Purpose |
@@ -42,7 +42,7 @@ has the gear Wowhead lists for it so far, without leveling gear or recipe lists.
 
 Each item's `tooltipHtml` is the full in-game tooltip. Here is one item from each game version's
 file, rendered with a small stylesheet (see [Rendering tooltips](#rendering-tooltips)), as the
-[WoW Classic Raid Tool](https://github.com/Napalmsteak/WoW-Classic-Raid-Tool-Releases) shows them:
+[WoW Classic Raid Tools](https://github.com/Napalmsteak/WoW-Classic-Raid-Tools-Releases) shows them:
 
 <table>
 <tr>
