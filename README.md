@@ -5,7 +5,7 @@ Discovery, Forever, TBC Classic, Wrath Classic, Cataclysm Classic and Mists of P
 Each item comes with its Wowhead tooltip, its icon (included as an image) and the sources it
 comes from.
 
-It covers **68,092 items** with every way to get them: dungeon and raid bosses, world bosses,
+It covers **72,819 items** with every way to get them: dungeon and raid bosses, world bosses,
 crafting, vendors (including tier-token and currency vendors), reputation, quests, PvP, tabards,
 rare elites, and world and holiday drops. That includes every leveling weapon and armor piece at
 every level, and every recipe with the materials it needs.
@@ -22,12 +22,12 @@ app ships with.
 | `itemDatabaseSources.js` | The same list as a CommonJS module, for Node.js / TypeScript |
 | `Classic Era Cache.json` | Classic Era items (8,490 · 14.5 MB) |
 | `Season of Discovery Cache.json` | Season of Discovery items (6,623 · 16.0 MB) |
-| `Forever Cache.json` | Forever items (4,940 · 10.8 MB). **Beta snapshot**, see below |
+| `Forever Cache.json` | Forever items (9,667 · 17.4 MB). **Beta snapshot**, see below |
 | `TBC Classic Cache.json` | TBC Classic items (7,943 · 16.4 MB) |
 | `Wrath Classic Cache.json` | Wrath Classic items (12,136 · 26.4 MB) |
 | `Cata Classic Cache.json` | Cataclysm Classic items (12,199 · 23.3 MB) |
 | `MoP Classic Cache.json` | Mists of Pandaria Classic items (15,761 · 31.8 MB) |
-| `icons/` | Every item's icon, `<iconName>.jpg` (6,114 · 36 × 36 px · 6.7 MB) |
+| `icons/` | Every item's icon, `<iconName>.jpg` (6,206 · 36 × 36 px · 6.7 MB) |
 | `sockets/` | Socket images for tooltips, `socket-<color>.gif` (red, yellow, blue, meta, prismatic, cogwheel, hydraulic) |
 
 Most items are weapons and armor, and every item level is covered: every uncommon (green), rare
@@ -195,7 +195,7 @@ An item with several source types counts once under each.
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Classic Era | 1,053 | 1,001 | 327 | 680 | 924 | 552 | 158 | 1,502 | 311 | 19 | 3,232 | 3 |
 | Season of Discovery | 1,273 | 1,312 | 68 | 892 | 267 | 1,568 | 361 | 269 | 956 | 21 | 141 | — |
-| Forever | 342 | — | — | 692 | — | 1,579 | — | 615 | — | — | 585 | 1,267 |
+| Forever | 373 | — | — | 1,290 | — | 1,704 | — | 1,536 | — | — | 3,265 | 1,678 |
 | TBC Classic | 735 | 1,130 | 57 | 1,279 | 799 | 777 | 245 | 1,093 | 1,466 | 51 | 1,190 | — |
 | Wrath Classic | 660 | 3,569 | 40 | 2,025 | 487 | 2,277 | 378 | 1,430 | 2,088 | 80 | 1,024 | 2 |
 | Cata Classic | 776 | 1,257 | 42 | 2,552 | 589 | 1,837 | 556 | 3,401 | 1,180 | 94 | 714 | — |
@@ -211,7 +211,7 @@ icons/<iconName>.jpg        36 × 36 px JPEG
 
 Example: `"iconName": "inv_helmet_20"` → `icons/inv_helmet_20.jpg`
 
-All 6,114 icons the items use are included, and every item has one. An `iconName` can be shared
+All 6,206 icons the items use are included, and every item has one. An `iconName` can be shared
 by many items. For other sizes, Wowhead's image CDN has the same
 names, though you'd be online again:
 `https://wow.zamimg.com/images/wow/icons/{small,medium,large}/<iconName>.jpg` (18, 36 or 56 px).
@@ -645,7 +645,7 @@ for path in sorted(glob.glob("*Cache.json")):
     with open(path, encoding="utf-8") as f:
         all_items.extend(json.load(f))
 
-print(f"Total items: {len(all_items)}")  # 68,092
+print(f"Total items: {len(all_items)}")  # 72,819
 
 by_version_and_id = {(i["itemExpansion"], i["itemId"]): i for i in all_items}
 ```
