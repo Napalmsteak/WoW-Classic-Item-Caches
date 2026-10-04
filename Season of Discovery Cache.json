@@ -1252,18 +1252,18 @@
     "itemExpansion": "Season of Discovery",
     "sourceKeys": [
       "season of discovery::raid::blackwing lair",
-      "season of discovery::raid::thunderaan"
+      "season of discovery::raid::crystal vale"
     ],
     "sourceLabels": [
       "Blackwing Lair",
-      "Thunderaan"
+      "Crystal Vale"
     ],
     "sourceTypes": [
       "Raid"
     ],
     "sourcePhases": [
       5,
-      0
+      5
     ],
     "bossNames": [
       "Tokens",
@@ -36545,18 +36545,18 @@
     "itemExpansion": "Season of Discovery",
     "sourceKeys": [
       "season of discovery::raid::blackwing lair",
-      "season of discovery::raid::thunderaan"
+      "season of discovery::raid::crystal vale"
     ],
     "sourceLabels": [
       "Blackwing Lair",
-      "Thunderaan"
+      "Crystal Vale"
     ],
     "sourceTypes": [
       "Raid"
     ],
     "sourcePhases": [
       5,
-      0
+      5
     ],
     "bossNames": [
       "Tokens",
@@ -55797,18 +55797,18 @@
     "itemExpansion": "Season of Discovery",
     "sourceKeys": [
       "season of discovery::raid::ruins of ahn'qiraj",
-      "season of discovery::raid::enchants"
+      "season of discovery::raid::temple of ahn'qiraj"
     ],
     "sourceLabels": [
       "Ruins of Ahn'Qiraj",
-      "Enchants"
+      "Temple of Ahn'Qiraj"
     ],
     "sourceTypes": [
       "Raid"
     ],
     "sourcePhases": [
       5,
-      0
+      6
     ],
     "bossNames": [
       "Enchants"
@@ -55874,18 +55874,18 @@
     "itemExpansion": "Season of Discovery",
     "sourceKeys": [
       "season of discovery::raid::ruins of ahn'qiraj",
-      "season of discovery::raid::enchants"
+      "season of discovery::raid::temple of ahn'qiraj"
     ],
     "sourceLabels": [
       "Ruins of Ahn'Qiraj",
-      "Enchants"
+      "Temple of Ahn'Qiraj"
     ],
     "sourceTypes": [
       "Raid"
     ],
     "sourcePhases": [
       5,
-      0
+      6
     ],
     "bossNames": [
       "Enchants"
@@ -55901,18 +55901,18 @@
     "itemExpansion": "Season of Discovery",
     "sourceKeys": [
       "season of discovery::raid::ruins of ahn'qiraj",
-      "season of discovery::raid::enchants"
+      "season of discovery::raid::temple of ahn'qiraj"
     ],
     "sourceLabels": [
       "Ruins of Ahn'Qiraj",
-      "Enchants"
+      "Temple of Ahn'Qiraj"
     ],
     "sourceTypes": [
       "Raid"
     ],
     "sourcePhases": [
       5,
-      0
+      6
     ],
     "bossNames": [
       "Enchants"
@@ -55978,18 +55978,18 @@
     "itemExpansion": "Season of Discovery",
     "sourceKeys": [
       "season of discovery::raid::ruins of ahn'qiraj",
-      "season of discovery::raid::enchants"
+      "season of discovery::raid::temple of ahn'qiraj"
     ],
     "sourceLabels": [
       "Ruins of Ahn'Qiraj",
-      "Enchants"
+      "Temple of Ahn'Qiraj"
     ],
     "sourceTypes": [
       "Raid"
     ],
     "sourcePhases": [
       5,
-      0
+      6
     ],
     "bossNames": [
       "Enchants"
@@ -115245,18 +115245,18 @@
     "itemExpansion": "Season of Discovery",
     "sourceKeys": [
       "season of discovery::raid::blackwing lair",
-      "season of discovery::raid::thunderaan"
+      "season of discovery::raid::crystal vale"
     ],
     "sourceLabels": [
       "Blackwing Lair",
-      "Thunderaan"
+      "Crystal Vale"
     ],
     "sourceTypes": [
       "Raid"
     ],
     "sourcePhases": [
       5,
-      0
+      5
     ],
     "bossNames": [
       "Tokens",
@@ -153225,23 +153225,19 @@
     "itemUrl": "https://www.wowhead.com/classic/item=236317",
     "itemExpansion": "Season of Discovery",
     "sourceKeys": [
-      "season of discovery::raid::naxxramas",
-      "season of discovery::raid::solistrasza"
+      "season of discovery::raid::scarlet enclave"
     ],
     "sourceLabels": [
-      "Naxxramas",
-      "Solistrasza"
+      "Scarlet Enclave"
     ],
     "sourceTypes": [
       "Raid"
     ],
     "sourcePhases": [
-      6,
-      0
+      8
     ],
     "bossNames": [
-      "Solistrasza",
-      "Four Horsemen"
+      "Solistrasza"
     ],
     "iconName": "inv_sword_07",
     "tooltipHtml": "<table><tr><td><!--nstart--><b class=\"q4\">Vis'era the Gutrender</b><!--nend--><!--ndstart--><!--ndend--><span class=\"q\"><br>Item Level <!--ilvl-->96</span><!--bo--><br>Binds when picked up<!--ue--><!--ue--><table width=\"100%\"><tr><td>Two-Hand</td><th><!--scstart2:8--><span class=\"q1\">Sword</span><!--scend--></th></tr></table><!--rf--><table width=\"100%\"><tr>\n    <td><span><!--dmg-->348 - 522 Damage</span></td>\n    <th>Speed <!--spd-->4.00</th>\n</tr></table><!--dps-->(108.75 damage per second)<br><span><!--stat4-->+30 Strength</span><br><span><!--stat3-->+14 Agility</span><br><span><!--stat7-->+72 Stamina</span><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--><br>Durability 120 / 120</td></tr></table><table><tr><td>Requires Level <!--rlvl-->60<br><!--rr--><!--useText:0:1--><span id=\"useText1\" class=\"q2\">Equip: <!--useEffect:0:1--><a href=\"/classic/spell=436239/increased-critical-1-all\" class=\"q2\">Improves your chance to get a critical strike with all spells and attacks by 1%.</a><!--useEffect:1--></span><!--useText:1--><br><br><!--useText:0:2--><span id=\"useText2\" class=\"q2\">Equip: <!--useEffect:0:2--><a href=\"/classic/spell=1231507/thirst-of-visera\" class=\"q2\">Regular melee attacks inflict enemy players with Thirst of Vis'era.</a><!--useEffect:2--></span><!--useText:2--><br><br><!--useText:0:3--><span id=\"useText3\" class=\"q2\">Use: <!--useEffect:0:3--><a href=\"/classic/spell=1231502/might-of-visera\" class=\"q2\">Knock back all enemy players in a cone. Enemies that are not knocked back are stunned for 5 sec.</a> (1 Min, 30 Sec Cooldown)<!--useEffect:3--></span><!--useText:3--><!--itemEffects:1--><br><!--pvpEquip--><!--pvpEquip--><div class=\"whtt-sellprice\">Sell Price: <span class=\"moneygold\">47</span> <span class=\"moneysilver\">88</span> <span class=\"moneycopper\">16</span></div><div class=\"whtt-extra whtt-droppedby\">Dropped by: Solistrasza</div><div class=\"whtt-extra whtt-dropchance\">Drop Chance: 13.67%</div></td></tr></table>",
